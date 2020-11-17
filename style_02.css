@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap');
+body{
+  background-color: #f7f9fc;
+  color: #27304d;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: regular;
+  font-size: 1.16rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.viddiv,#bg1,#bg2,#bg3,.r-title,#r1,#key1-r,#key1,#r2,#key2,#flow,#flow1,#flow2,#flow3{
+  height: 640px;
+  margin:0 auto;
+  position: relative;
+  padding-top: 60px;
+}
+
+h1,p,#title-txt,.r-title,#r1,#key1-r,#key1,#r2,#key2,#flow1,#flow2,#flow3{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 2.4rem;
+  line-height: 4.32rem;
+  margin-bottom: 2rem;
+}
+
+p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  z-index: 0;
+  line-height: 1.85rem;
+}
+
+.viddiv{
+  background-image: url(img/vid-thumbnail.jpg);
+  background-size: 100%;
+  height:600px;
+  text-align:center;
+  padding-top: 200px;
+  color: #f7f9fc;
+}
+
+#title{
+  margin: 0;
+  position: relative;
+  padding-top: 0px;
+}
+
+#title-txt{
+  position: relative;
+  margin: 0;
+  top:20%;
+  padding-left: 728px;
+  color:white;
+}
+
+#bg1{
+  margin-top: -10px;
+  background-image: url(img/DSC00011.JPG);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+  height: 800px;
+  color:#f7f9fc;
+}
+
+#bg2{
+  padding-top: 0;
+  height: 640px;
+}
+
+.r-title{
+  height: 200px;
+  padding-top: 160px;
+}
+
+#box1{
+  background-image: url(img/bg1-2-ytn.jpg);
+  background-size: 100%;
+  position: relative;
+  top: 0px;
+  width: 200px;
+  height: 120px;
+  z-index: 0;
+}
+
+#box2{
+  background-image: url(img/AdobeStock_332316339_Preview.jpeg);
+  background-size: 100%;
+  position: relative;
+  top: 100px;
+  width: 200px;
+  height: 120px;
+  z-index: 0;
+}
+
+#bg3{
+  padding-top: 80px;
+  background-image: url(img/DSC00091.JPG);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+  text-align: right;
+}
+
+#r1{
+  margin-top: 0px;
+  padding-top: 80px;
+  height: 720px;
+}
+
+#r2{
+  margin-top:-180px;
+  padding-top: 0px;
+  height: 720px;
+}
+
+#key1-r{
+  padding-top: 160px;
+  height: 320px;
+}
+
+/* #graywindow{
+  position: absolute;
+  width: 960px;
+  height: 960px;
+  background-color: #F8F9FC;
+  opacity: 0.4;
+  z-index: 0;
+} */
+
+.interview{
+  position: absolute;
+  left: 36%;
+  z-index: 1;
+  height: 40px;
+  padding: 11px;
+  padding-top: 14px;
+  padding-right: 16px;
+  border-radius: 54px;
+  background-color: #F8F9FC;
+  box-shadow:  10px 10px 20px #D8DCF0,
+             -10px -10px 20px #ffffff;
+  font-size: 24.5px;
+  font-weight: 600;
+}
+
+.dot{
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #ff6200;
+  float: left;
+}
+
+#graph1{
+  position: relative;
+  top: 0px;
+  width: 960px;
+  z-index: -1;
+}
+
+
+#graph3{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 960px;
+  height: 960px;
+  z-index: -1;
+}
+
+.ui{
+  position: relative;
+  top:84px;
+  right: 0px;
+  width: 556px;
+  height: 416.7965px;
+  border-radius: 20px;
+  z-index: -1;
+  box-shadow:  10px 10px 20px #D8DCF0,
+             -10px -10px 20px #ffffff;
+}
+
+.ui-right{
+  position: absolute;
+  top: 84px;
+  right: 0px;
+  width: 556px;
+  height: 416.7965px;
+  border-radius: 20px;
+  z-index: -1;
+  box-shadow:  10px 10px 20px #D8DCF0,
+             -10px -10px 20px #ffffff;
+}
+
+.exp{
+  position: relative;
+  left: 600px;
+  top: -280px;
+}
+
+.exp-left{
+  position: relative;
+  left: 0px;
+  top: 60px;
+  float: left;
+}
+
+#uikey1{
+  position: relative;
+  margin: 0 auto;
+  width: 834px;
+  height: 384px;
+  /* z-index: -1; */
+  /* background-image: url(img/channelui-dummy.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%; */
+  border-radius: 20px;
+}
+
+#uikey2{
+  position: relative;
+  margin: 0 auto;
+  width: 667.2px;
+  height: 500.1558px;
+  z-index: -1;
+  /* background-image: url(img/01-access.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+  border-radius: 28px; */
+}
+
+
+.keyexp{
+  position: relative;
+  /* left: 288px; */
+  top: 32px;
+}
+
+#flow{
+  margin-top: 120px;
+  margin-bottom: 120px;
+  height: 280px;
+  text-align: center;
+}
