@@ -42,8 +42,7 @@ p{
 }
 
 .viddiv{
-  background-image: url(img/DSC00091-1.png);
-  background-size: 100%;
+  background-color: gray;
   height:540px;
   text-align:center;
   padding-top: 200px;
