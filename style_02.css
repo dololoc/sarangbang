@@ -41,6 +41,9 @@ p{
   margin-bottom: 2.4rem;
 }
 
+.left-txt{left:240px;}
+.right-txt{right:240px;}
+
 .viddiv{
   background-color: #dcd7d9;
   height:540px;
