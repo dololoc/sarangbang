@@ -259,6 +259,9 @@ p{
     margin-bottom: 2rem;
     text-align: center;
   }
+  .p-eng{
+    text-align: center;
+  }
   .left-txt{
     text-align: left;
     left: 0;
