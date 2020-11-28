@@ -1,0 +1,78 @@
+body{background-color:#ffffff;color:#27304d;font-family: 'Open Sans', sans-serif;font-family: 'Roboto', sans-serif;font-size:1rem;font-weight:400;position:relative;margin:0 auto;}
+h1{font-weight:900;font-size:4rem;margin:0;letter-spacing:-0.2px;}
+p{font-weight:400;line-height:2rem;letter-spacing:-1px;text-align:justify;}
+#main-img{width:100%;margin-bottom:-4px;}
+#introvid, #outrovid{width:100%;background-color:#f7f9fc;text-align:center;}
+/* #introvid{margin-bottom:160px;}#outrovid{margin:0;} */
+#background, #research, #solution,#profile,#source{width:960px;margin:0 auto;margin-bottom:120px;position:relative;height:660px;}
+#research{height:800px;}#research.textarea{height:720px;}
+#solution{height:1040px;}#solution.textarea{height:960px;}
+.titlearea{
+  /* border: 1px solid gray; */
+  position: absolute;
+  left:20px;
+  top:0px;
+  width: 80%;
+  height: 100%;
+  z-index: 0;
+}
+ul.chapter{
+  list-style-type: none;
+  margin:0; padding:0;
+  position: absolute; z-index: 0;
+  top: 60px;
+}
+ul.chapter li{
+  margin-bottom:16px; height:2.8rem;
+  font-weight:800;font-size:2.2rem;
+  transition: font-size 1s, color 1s;
+}
+ul.chapter li:hover{
+  font-size: 2.4rem;
+  color: #ff6200;
+}
+
+.textarea{
+  position: absolute; z-index: 0;
+  right:0px; top: 40px;
+  width: 52%; height: 480px;
+}
+.originaltext{font-weight:600;}
+.text{
+  position: absolute; z-index: 0;
+  width: 100%; top: 0px; left: 0px;
+}
+.highlight-hover{
+  color: #ffffff;
+  background-color: #ff6200;
+  padding: 4px;
+}
+.hover-img{
+  position: absolute;
+  z-index: 2;
+  border: 0.5px solid #27304d;
+  color: #27304d; background-color:#ffffff;
+  border-radius: 4px;
+  padding: 12px; line-height:1.5rem;
+}
+.member{
+  position: absolute;
+  margin-top: 200px;
+  width: 300px;
+  height: 300px;
+}
+.p-img{
+  position: relative;
+  margin: 0 auto;
+  width: 200px; height: 200px; border-radius: 100px;
+  background-color: #f7f9fc;
+}
+.link-icon{
+  width:0.8rem;height:0.8rem;-webkit-filter: invert(100%);
+}
+.ui{position:absolute;width:720px;left:-160px;}
+.ui-exp{position:absolute;top:520px;left:-80px;width:600px;}
+
+#source{margin-top:200px;}
+#ul-source{margin:0;margin-top:40px; padding:0;position: absolute; z-index: 0;}
+#ul-source li{margin-bottom:8px;line-height:2rem;}
