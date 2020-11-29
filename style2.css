@@ -1,0 +1,43 @@
+body{background-color:#ffffff;color:#27304d;font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size:1rem; font-weight:400; position:relative; margin:0 auto;}
+h1{margin:0;font-family:'Roboto',sans-serif;font-size:4rem;font-weight:900;letter-spacing:-0.2px;}
+p{font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size:1rem; font-weight:400; line-height:2rem; letter-spacing:-1px; text-align: justify;}
+#introvid,#outrovid{width:100%;}
+#contents{position:relative;width:100%;margin-top:-4px;}
+ol.title{list-style-type:none; width:100%;margin:0;padding:0;}
+ol.title li{
+  position:relative;width:100%;height:200px;
+  /* transition: height 0.8s; */
+}
+/* ol.title li:hover{height:288px;} */
+ol.title li h1{width:960px;margin:0 auto;line-height:200px;}
+
+.content-solid{position:relative;width:100%; margin-top:-56px;display:none;}
+
+.content-area{position:relative;width:960px;margin:0 auto;height:680px;}
+ul.chapter{position:absolute;left:0;top:20px;z-index:0;list-style-type:none;margin:0;padding:0;}
+ul.chapter li{margin-bottom:16px;height:2.8rem;font-weight:900;font-size:2.2rem;transition: color 0.8s;}
+ul.chapter li:hover{color: rgba(255,255,255,0);-webkit-text-stroke: 1px #ffffff;
+}
+ul#solution-chapter li:hover{color: rgba(255,255,255,0);-webkit-text-stroke: 1px #27304d;
+}
+
+.text-area{position:absolute; right:0px; top:0px; width:496px; height:100%; z-index:0;}
+.text{position:absolute; width:100%; top:0px; left:0px; z-index:0;}
+.text-title{font-weight:700;}
+.background-highlight{background-color:#ffffff;color:#27304d;padding:4px;font-family: 'Noto Sans KR', sans-serif;font-family: 'fontello';}
+.research-highlight{background-color:#ffffff;color:#ff6200;padding:4px;font-family: 'Noto Sans KR', sans-serif;font-family: 'fontello';}
+
+.B-hover{
+  position: absolute;z-index: 2; border: 0.5px solid #27304d;
+  color: #27304d; background-color:#ffffff;
+  border-radius: 4px; padding: 12px; line-height:1.5rem;
+}
+.R-hover{
+  position: absolute;z-index: 2; border: 0.5px solid #ff6200;
+  color: #ff6200; background-color:#ffffff;
+  border-radius: 4px; padding: 12px; line-height:1.5rem;
+}
+
+.ui{position:absolute;width:720px;left:-160px;}
+.ui-room{position:absolute;width:720px;left:-148px;}
+.ui-exp{position:absolute;top:520px;left:-80px;width:600px;}
