@@ -5,15 +5,15 @@ p{font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; fo
 #introvid,#outrovid{width:100%;}
 #domain{position:relative; width:100%; height:100vh; z-index:0;}
 #domain-text{position:relative; top:10%; width:960px; margin: 0 auto; color: #ffffff;margin-bottom:-600px;}
-#domain-text p,.eng{font-size:0.9rem; line-height:1.6rem;}
+#domain-text p,.eng{font-size:1.8vh; line-height:3.2vh;}
 #contents{position:relative;width:100%;margin-top:-4px; z-index:0;}
 ol.title{list-style-type:none; width:100%;margin:0;padding:0;}
 ol.title li{
-  position:relative;width:100%;height:72px;
+  position:relative;width:100%;height:4vw;
   /* transition: height 0.8s; */
 }
 /* ol.title li:hover{height:288px;} */
-ol.title li h1{width:960px;margin:0 auto;line-height:72px;}
+ol.title li h1{width:960px;margin:0 auto;line-height:4vw;}
 ol.title li h1::after{content:'\e806'; font-family:'fontello'; margin-left:20px;}
 
 .content-solid{position:relative;width:100%; margin-top:0px;display:none;}
