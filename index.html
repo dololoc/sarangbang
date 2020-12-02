@@ -217,8 +217,8 @@
               ndx = $(this).index(); if(ndx!=0){ndx=ndx-1;}
               console.log(ndx);
               var thContent = $('.content-solid').eq(ndx);
-              $(thContent).slideDown();
-              $(thContent).siblings('.content-solid').slideUp();
+              $(thContent).slideDown(800);
+              $(thContent).siblings('.content-solid').slideUp(800);
             },function(){}
       );
       // var $animatetitle = $('.title-area').hover(
