@@ -5,18 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:image" content="img/PC Main.png" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style4.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/fontello.css">
   <title>우리동네사랑방</title>
 </head>
 <body>
   <div id="introvid"><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/485434662?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
-  <div id="domain"><img src="img/PC Main.png" alt="Sarangbang-domain" width=100%></div>
+  <div id="domain">
+    <div id="domain-text">
+      <img src="img/LOGO-white.png" alt=""  width=240px>
+      <p style="margin-bottom:4px;">우리 동네 어르신들. 모두 온라인으로 모여요.</p><p class="eng" style="margin-top:4px; margin-bottom:5%;">All the Seniors in Our Neighborhoods. Let's Gather online.</p>
+      <p>전세계적 감염병의 유행과 함께 급속도로 발전한<br>포스트 코로나 시대의 산업은 온라인에서의 만남을 전제로 합니다.<br>하지만 스마트 디바이스의 사용이 어려우신 어르신의 입장에서는<br>모든게 어렵게 느껴지기만 합니다.<br>어르신들의 입장을 고려한 똑똑한 플랫폼, 우리동네 사랑방을 소개합니다.</p>
+      <p class="eng">With Worldwide Pandemics, the IT Industry has developed so rapidly.<br>But, the Problem is that, from the Senior's point of view,<br>all the smart devices are too difficult to use efficiently.<br>So, we've studied the cognitive way of Seniors in using the applications.<br>Let's see 'Sarangbang', the smart group-talk Platform for the Seniors.</p>
+    </div>
+    <img src="img/PCMain-no-Logo.jpg" alt="Sarangbang-domain" width=100% style="position:absolute; width:100%; top:0; left:0; z-index:-1;">
+  </div>
   <div id="contents">
     <ol class="title">
-    <li class="title-area" style="background-color:#27304d;color:#ffffff;"><h1>Background.</h1></li>
+    <li class="title-area" style="background-color:#27304d;color:#ffffff;"><h1>전염병의 유행과 갈 곳 없는 어르신들</h1></li>
       <div style="background-color:#27304d;color:#ffffff; height:760px;" class="content-solid">
         <div class="content-area">
         <ul class="chapter">
@@ -63,7 +71,7 @@
         </div>
       </div>
       </div>
-    <li class="title-area" style="background-color:#ff6200;color:#ffffff;"><h1>Research.</h1></li>
+    <li class="title-area" style="background-color:#ff6200;color:#ffffff;"><h1>어르신들의 커뮤니케이션</h1></li>
       <div style="background-color:#ff6200;color:#ffffff;height:720px;" class="content-solid">
         <div class="content-area">
           <ul class="chapter">
@@ -121,7 +129,7 @@
           </div>
         </div>
       </div>
-    <li class="title-area" style="background-color:#ffffff;color:#27304d;"><h1>Solution.</h1></li>
+    <li class="title-area" style="background-color:#ffffff;color:#27304d;"><h1>우리동네 사랑방을 소개합니다</h1></li>
       <div class="content-solid"></div>
       <div style="background-color:#ffffff;color:#27304d;height:1280px;" class="content-solid">
         <div class="content-area">
@@ -203,31 +211,32 @@
     $(document).ready(function(){
       $('.text').hide();
       var ndx=0;
-      var $counttitle = $('.title-area').click(
+      var $counttitle = $('.title-area').hover(
             function(){
               ndx = $(this).index(); if(ndx!=0){ndx=ndx-1;}
               console.log(ndx);
-              $('.content-solid').eq(ndx).slideToggle();
-            }
-      )
-      var $animatetitle = $('.title-area').hover(
-            function(){
-              ndx = $(this).index(); if(ndx!=0){ndx=ndx-1;}
-              if(!$('.content-solid').eq(ndx).is(':visible')){$(this).animate({height:"288px"});}
-            },function(){
-              $(this).animate({height:"200px"});
-            }
-      )
+              var thContent = $('.content-solid').eq(ndx);
+              $(thContent).slideDown();
+              $(thContent).siblings('.content-solid').slideUp();
+            },function(){}
+      );
+      // var $animatetitle = $('.title-area').hover(
+      //       function(){
+      //         ndx = $(this).index(); if(ndx!=0){ndx=ndx-1;}
+      //         if(!$('.content-solid').eq(ndx).is(':visible')){$(this).animate({height:"288px"});}
+      //       },function(){
+      //         $(this).animate({height:"200px"});
+      //       }
+      // )
       var jdx=0;
-      var $countchapter = $('ul.chapter li').click(
+      var $countchapter = $('ul.chapter li').hover(
             function(){
               jdx = $(this).index();
               var textselect = $('.text').eq(jdx+(ndx*6));
               $(textselect).siblings().hide();
               if(ndx!=3){$(textselect).slideDown();}else{$(textselect).fadeIn();$('#mockup').show();}
-              $(this).css
-            }
-      )
+            },function(){}
+      );
       var Bidx = 0;
       $('.B-hover').hide();
       var $Bcountspan = $('.background-highlight').hover(
@@ -256,15 +265,15 @@
       //       },function(){
       //         $('.S-hover').hide();
       //     });
-      var $showreference = $('#reference').click(
+      var $showreference = $('#reference').hover(
             function(){
               $('#reference-area').slideToggle();
-            });
-      var $animatereference = $('#reference').hover(
-            function(){
-              if(!$('#reference-area').is(':visible')){$(this).animate({height:"288px"});}
-            },function(){$(this).animate({height:"200px"});}
-      );
+            },function(){});
+      // var $animatereference = $('#reference').hover(
+      //       function(){
+      //         if(!$('#reference-area').is(':visible')){$(this).animate({height:"288px"});}
+      //       },function(){$(this).animate({height:"200px"});}
+      // );
     });
   </script>
 
