@@ -9,12 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>우리동네사랑방</title>
 </head>
 <body>
   <div id="introvid"><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/485434662?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
   <div id="domain">
-    <div id="domain-text">
+    <div id="domain-text" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1500">
       <img src="img/LOGO-white.png" alt=""  width=240px>
       <p style="margin-bottom:4px;">우리 동네 어르신들. 모두 온라인으로 모여요.</p><p class="eng" style="margin-top:4px; margin-bottom:5%;">All the Seniors in Our Neighborhoods. Let's Gather online.</p>
       <p>전세계적 감염병의 유행과 함께 급속도로 발전한<br>포스트 코로나 시대의 산업은 온라인에서의 만남을 전제로 합니다.<br>하지만 스마트 디바이스의 사용이 어려우신 어르신의 입장에서는<br>모든게 어렵게 느껴지기만 합니다.<br>어르신들의 입장을 고려한 똑똑한 플랫폼, 우리동네 사랑방을 소개합니다.</p>
@@ -204,7 +205,7 @@
       <p style="font-weight:700;border-bottom:1px solid #27304d;">최호진</p><p>blahblahblahblahblahblahblah</p>
     </div>
   </div>
-  <footer><img src="img/BlackFooter.png" alt="" width=100%></footer>
+  <footer><img src="img/2880Footer.png" alt="" width=100%></footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
@@ -276,6 +277,34 @@
       // );
     });
   </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
 
+  // You can also pass an optional settings object
+  // below listed default settings
+  AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+  });
+  </script>
 </body>
 </html>
