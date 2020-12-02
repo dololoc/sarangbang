@@ -1,0 +1,67 @@
+body{background-color:#ffffff;color:#27304d;font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size:1rem; font-weight:400; position:relative; margin:0 auto;}
+h1{margin:0;font-family:'Roboto',sans-serif;font-size:2.4rem;font-weight:900;letter-spacing:-0.2px;}
+p{font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size:1rem; font-weight:500; line-height:1.85rem; letter-spacing:-1px; text-align: justify;}
+.eng{font-family: 'Roboto', sans-serif; font-size:1rem; font-weight:400; line-height:1.85rem; letter-spacing:-0.2px; text-align: justify;}
+#introvid,#outrovid{width:100%;}
+#domain{position:relative; width:100%; height:100vh; z-index:0;}
+#domain-text{position:relative; top:10%; width:960px; margin: 0 auto; color: #ffffff;margin-bottom:-600px;}
+#domain-text p,.eng{font-size:0.9rem; line-height:1.6rem;}
+#contents{position:relative;width:100%;margin-top:-4px; z-index:0;}
+ol.title{list-style-type:none; width:100%;margin:0;padding:0;}
+ol.title li{
+  position:relative;width:100%;height:200px;
+  /* transition: height 0.8s; */
+}
+/* ol.title li:hover{height:288px;} */
+ol.title li h1{width:960px;margin:0 auto;line-height:200px;}
+ol.title li h1::after{content:'\e806'; font-family:'fontello'; margin-left:20px;}
+
+.content-solid{position:relative;width:100%; margin-top:-56px;display:none;}
+
+.content-area{position:relative;width:960px;margin:0 auto;height:720px;}
+ul.chapter{position:absolute;left:0;top:20px;z-index:0;list-style-type:none;margin:0;padding:0;}
+ul.chapter li{margin-bottom:16px;height:2.8rem;font-weight:900;font-size:2rem;transition: color 0.8s;}
+ul.chapter li:hover{color: rgba(255,255,255,0);-webkit-text-stroke: 1px #ffffff;
+}
+ul#solution-chapter li:hover{color: rgba(255,255,255,0);-webkit-text-stroke: 1px #27304d;
+}
+
+.text-area{position:absolute; right:0px; top:0px; width:496px; height:100%; z-index:0;}
+.text{position:absolute; width:100%; top:0px; left:0px; z-index:0;}
+.text-title{font-weight:700;}
+.background-highlight{background-color:#ffffff;color:#27304d;padding:4px;font-family: 'Noto Sans KR', sans-serif;font-family: 'Roboto', sans-serif;font-family: 'fontello';}
+.research-highlight{background-color:#ffffff;color:#ff6200;padding:4px;font-family: 'Noto Sans KR', sans-serif;font-family: 'Roboto', sans-serif;font-family: 'fontello';}
+.solution-highlight{background-color:#ff6200;color:#ffffff;padding:4px;font-family: 'Noto Sans KR', sans-serif;font-family: 'Roboto', sans-serif;font-family: 'fontello'; z-index:5;}
+
+.B-hover{
+  position: absolute;z-index: 2; border: 0.5px solid #27304d;
+  color: #27304d; background-color:#ffffff;
+  border-radius: 4px; padding: 12px; line-height:1.5rem;
+  font-family: 'Noto Sans KR', sans-serif;font-family: 'Roboto', sans-serif;font-family: 'fontello';
+}
+.R-hover{
+  position: absolute;z-index: 2; border: 0.5px solid #ff6200;
+  color: #ff6200; background-color:#ffffff;
+  border-radius: 4px; padding: 12px; line-height:1.5rem;
+  font-family: 'Noto Sans KR', sans-serif;font-family: 'Roboto', sans-serif;font-family: 'fontello';
+}
+.S-hover{
+  position:absolute; width:720px;left:-160px;z-index:3;
+}
+
+.ui{position:absolute;width:720px;left:-160px;}
+.ui-room{position:absolute;width:720px;left:-148px;}
+.ui-exp{position:absolute;top:520px;left:-80px;width:600px;z-index:5;}
+
+#reference{position: relative; height:200px; background-color:#f7f9fc;}
+/* #reference:hover{height:288px;} */
+#reference h1{position:relative; width:960px; margin: 0 auto; line-height:200px;}
+#reference-area{position:relative;width:100%; height:800px; background-color:#f7f9fc; display:none;}
+#ul-source{position:relative; width:960px; margin:0 auto; margin-top:-56px; padding:0; z-index: 0;}
+#ul-source li{margin-bottom:8px;line-height:2rem;}
+
+#profile{position:relative; width:960px; height:400px; margin:0 auto; margin-top:80px; z-index:0;}
+.member{ position: absolute; width: 300px; height: 300px;}
+.p-img{ position: relative; margin: 0 auto; width: 200px; height: 200px; border-radius: 100px; background-color: #f7f9fc;}
+
+footer{position: relative; z-index: 0;}
