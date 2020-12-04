@@ -19,6 +19,8 @@ ul.chapter-list{position: relative; margin: 0; padding:0; list-style-type: none;
 ul.chapter-list li{display: inline; position: relative;font-size: 2vh; margin:0;}
 ul.chapter-list li::before{content: "|"}
 
+.chapter-bar{position:relative; left:0; top: 2vh; height:1vh;background-color:#ffffff;}
+
 .content-area{position: relative; margin-top: -20vh; left: 8vw; width: 84vw;}
 .content-b{position: relative; margin-bottom: 4.6vh}
 .content-r{position: relative; margin-bottom: 4.6vh}
@@ -28,11 +30,11 @@ ul.chapter-list li::before{content: "|"}
 .text-title{font-weight:700; margin-bottom: 4.6vh;}
 
 .motion{position: sticky; left: 52vw; top: 16vh; width: 40vw; height: 72vh; background-color: #ffffff; border-radius: 4px;}
-.ui{position: sticky; left: 8vw; top: 16vh; width: 48vw;}
+.ui{position: sticky; left: 8vw; top: 16vh; width: 48vw; z-index: 10;}
 
 .motion-b{position: fixed; left: 52vw; top: 16vh; width: 40vw; height: 72vh; text-align: center; background-color: #ffffff;color: #27304d; border-radius:4px; display: none;}
 .motion-r{position: fixed; left: 52vw; top: 16vh; width: 40vw; height: 72vh; text-align: center; background-color: #ffffff;color: #27304d; border-radius:4px; display: none;}
-.motion-s{position: fixed; left: 8vw; top: 16vh; width: 48vw; display: none;}
+.motion-s{position: fixed; left: 3.8vw; top: 14vh; width: 54.7vw; display: none;}
 
 #reference-title{position: relative; width: 100%; z-index: 0; height: 8vh; background-color: #f7f9fc;}
 #reference-title h1{position: relative; left: 8vw; line-height: 8vh;}
