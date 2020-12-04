@@ -22,9 +22,9 @@ ul.chapter-list li::before{content: "|"}
 .chapter-bar{position:relative; left:0; top: 2vh; width:0; height:1vh;background-color:#ffffff;}
 
 .content-area{position: relative; margin-top: -20vh; left: 8vw; width: 84vw;}
-.content-b{position: relative; margin-bottom: 4.6vh}
-.content-r{position: relative; margin-bottom: 4.6vh}
-.content-s{position: relative; margin-bottom: 4.6vh}
+.content-b{position: relative; margin-bottom: 4.6vh;}
+.content-r{position: relative; margin-bottom: 4.6vh;}
+.content-s{position: relative; margin-bottom: 4.6vh; z-index: 5;}
 .content-solid p{width:32vw; font-size: 2vh; line-height: 3.7vh;}
 .content-s p{position: relative; left: 44vw; width: 32vw;}
 .text-title{font-weight:700; margin-bottom: 4.6vh;}
