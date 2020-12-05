@@ -58,6 +58,7 @@ ul.reference-list li{position: relative; font-size: 2vh; line-height: 4vh; font-
 footer{position: relative; z-index: 0;}
 
 @media (max-width: 600px){
+  h1{font-size: 5vw;}
   .motion{display:none;}
   .hover-me{display:none;}
   .content-area{margin-top: 4vh; left: 8vw;}
