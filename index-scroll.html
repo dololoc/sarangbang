@@ -262,7 +262,7 @@
         function showContent(e2){
           if(e2==2||e2==3||e2==4){
             var thiswrapper = $('.content-wrapper').eq(e2-2); $(thiswrapper).show();
-            var contents = $(thiswrapper).children('.content-solid'); $(contents).slideDown().delay(200);
+            var contents = $(thiswrapper).children('.content-solid'); $(contents).slideDown(800).delay(200);
             var classforBottom = $('.bottom');
             if(e2==4){
               classforSmotion.eq(0).show();
