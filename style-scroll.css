@@ -1,59 +1,57 @@
 body{background-color:#ffffff; color:#27304d; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 2vh; font-weight: 400; position:relative; margin:0 auto;}
-h1{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 4vh; font-weight: 700; letter-spacing: -0.2px;}
-p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 2vh; line-height: 3.7vh; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
+h1{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 4.6vh; font-weight: 700; letter-spacing: -0.2px;}
+p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 2.4vh; line-height: 5.76vh; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
 .eng{font-family:'Roboto',sans-serif; font-weight:400; letter-spacing: -0.2px;}
 
 .scroll-top{position: fixed; top:0px; right: 0; z-index: 16; color: yellow;}
 .content-top{position: fixed; top:16vh; right: 0; z-index: 16; color: yellow;}
 .scroller-top{position: fixed; top: 80vh; right: 0; z-index: 16; color: yellow;}
 .scroller-bottom{position: fixed; top: 90vh; right: 0; z-index: 16; color: yellow;}
+.ui-anchor{position: fixed; top: 24vh; right: 0; z-index: 16; color: yellow;}
 
 .top{position: absolute; top:0; right: 0; z-index:16; color: red;}
-.bottom{position:absolute; bottom:0; right: 0; z-index: 16; color: red;}
+.bottom{position:absolute; right: 0; z-index: 16; color: red;}
 
 #introvid,#outrovid{position: relative; width: 100%;}
 #domain{position:relative; width: 100%; height: 100vh; z-index: 0; overflow-y:hidden;}
-#domain-text{position: relative; top:10vh; left:8vw; color: #ffffff;}
+#domain-text{position: relative; top:10vh; left:5vw; color: #ffffff;}
+#domain-text p{font-size: 2vh; line-height: 3.7vh; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
 
 #contents{position: relative; width: 100%; z-index: 0;}
 ul.title{list-style-type: none; width: 100%; margin: 0; padding: 0;}
-ul.title li{position: relative; width: 100%; height: 8vh;}
-ul.title li h1{position: relative; left: 8vw; line-height: 8vh;}
+ul.title li{position: relative; width: 100%; height: 12vh;}
+ul.title li h1{position: relative; left: 5vw; line-height: 12vh;}
 ul.title li h1::after{content:'\e806'; font-family:'fontello'; margin-left: 20px;}
 
-.content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; border-top: 1px solid #ffffff; display: none;}
-.chapter{width: 100%; height: 8vh;}
-ul.chapter-list{position: relative; margin: 0; padding:0; list-style-type: none; width: 84vw; left: 8vw;}
-ul.chapter-list li{display: inline; position: relative;font-size: 2vh; margin:0;}
-ul.chapter-list li::before{content: "|"}
+.content-wrapper{position:relative; width:100%; height: 504vh; margin:0; display:none;}
+.content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; display: none;}
+.chapter{width: 100%; height: 4vh;}
 
-.chapter-bar{position:relative; left:0; top: 2vh; width:0; height:1vh;background-color:#ffffff;}
+.chapter-bar{position:relative; left:4px; top: 0vh; width:100%; height:1vh;background-color:#ffffff;}
 
-.content-area{position: absolute; top:4vh; left: 8vw; width: 84vw;}
+.content-area{position: absolute; top:4vh; left: 5vw; width: 90vw;}
 .content-b{position: relative; padding-bottom: 4.6vh;}
 .content-r{position: relative; padding-bottom: 4.6vh;}
 .content-s{position: relative; padding-bottom: 4.6vh; z-index: 5;}
-.content-solid p{width:32vw; font-size: 2vh; line-height: 3.7vh;}
-.content-s p{position: relative; left: 44vw; width: 32vw;}
+.content-solid h1{margin-bottom: 6vh;}  .content-solid p{width:40vw;}
+.content-s p{position: relative; left: 50vw; width: 40vw;}
 .text-title{font-weight:700;}
 
-.motion{position: absolute; left: 44vw; top: 16vh; width: 48vw; height: 36vw;}
-.ui{position: sticky; left: 8vw; top: 16vh; width: 48vw; z-index: 4;}
+.motion{position: absolute; left: 55vw; top: 0vh; width: 40vw;}
+.ui{position: sticky; left: 5vw; top: 16vh; width: 48vw; z-index: 4;}
 
-.motion-b{position: fixed; left: 44vw; top: 16vh; width: 48vw; height: 36vw; text-align: center; background-color: #ffffff;color: #27304d; border-radius:4px; display: none;}
-.motion-r{position: fixed; left: 44vw; top: 16vh; width: 48vw; height: 36vw; text-align: center; background-color: #ffffff;color: #27304d; border-radius:4px; display: none;}
-.motion-s{position: fixed; left: 3.8vw; top: 14vh; width: 54.7vw; display: none;}
+.full-motion{position:absolute; left: 30vw; top:0vh; width: 40vw;}
+.motion-s{position: fixed; left: 0.8vw; top: 14vh; width: 54.7vw; display: none;}
 
-#reference-title{position: relative; width: 100%; z-index: 0; height: 8vh; background-color: #f7f9fc;}
-#reference-title h1{position: relative; left: 8vw; line-height: 8vh;}
-#reference-title h1::after{content:'\e806'; font-family:'fontello'; margin-left: 20px;}
-#reference-solid{position: relative; width: 100%; height: 76vh; margin-top: 0px; background-color: #f7f9fc; display: none;}
-ul.reference-list{list-style-type: none; position: relative; margin: 0; top: 2vh; padding: 0; left: 8vw;}
-ul.reference-list li{position: relative; font-size: 2vh; line-height: 4vh; font-weight: 400;}
+#reference-title{position: relative; width: 100%; z-index: 0; height: 12vh; background-color: #f7f9fc;}
+#reference-title h1{position: relative; left: 5vw; line-height: 12vh;}
+#reference-solid{position: relative; width: 100%; height: 96vh; margin-top: 0px; background-color: #f7f9fc;}
+ul.reference-list{list-style-type: none; position: relative; margin: 0; top: 2vh; padding: 0; left: 5vw;}
+ul.reference-list li{position: relative; font-size: 2.4vh; line-height: 5.76vh; font-weight: 400;}
 
-#profile{position:relative; width:84vw; height:60vh; left: 0; margin:0 auto; z-index:0;}
+#profile{position:relative; width:100%; height:84vh; left: 0; margin:0 auto; z-index:0; background-color: #ffffff;}
 .member{ position: absolute; width: 24vw; height: 28vw;}
-.p-img{ position: relative; margin: 0 auto; margin-top: 16vh; width: 24vw; height: 16vw; border-radius: 4px; background-color: #f7f9fc;}
+.p-img{ position: relative; margin: 0 auto; margin-top: 16vh; width: 24vw; height: 24vw; border-radius: 4px; background-color: #f7f9fc;}
 
 footer{position: relative; z-index: 0;}
 
