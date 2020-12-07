@@ -34,7 +34,8 @@ ul.title li h1::after{content:'\e806'; font-family:'fontello'; margin-left: 20px
 .content-r{position: relative; padding-bottom: 4.6vh;}
 .content-s{position: relative; padding-bottom: 4.6vh; z-index: 5;}
 .content-solid h1{margin-bottom: 6vh;}  .content-solid p{width:40vw;}
-.content-s p{position: relative; left: 50vw; width: 40vw;}
+.content-s h1{position: relative; left: 50vw; width: 40vw; margin-top: 4vh; font-size: 4vh;}
+.content-s p{position: relative; left: 50vw; width: 40vw; margin-top: 2vh;}
 .text-title{font-weight:700;}
 
 .motion{position: absolute; left: 55vw; top: 0vh; width: 40vw;}
