@@ -12,7 +12,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 .top{position: absolute; top:0; right: 0; z-index:16; color: red;}
 .bottom{position:absolute; right: 0; z-index: 16; color: red;}
 
-#introvid,#outrovid{position: relative; width: 100%;}
+#introvid,#outrovid{background-color:#424242; position: relative; width: 100%; height: 100vh; overflow-y:hidden;}
 #domain{position:relative; width: 100%; height: 100vh; z-index: 0; overflow-y:hidden;}
 #domain-text{position: relative; top:10vh; left:5vw; color: #ffffff;}
 #domain-text p{font-size: 2vh; line-height: 3.7vh; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
@@ -53,7 +53,7 @@ ul.reference-list li{position: relative; font-size: 2.4vh; line-height: 5.76vh; 
 .member{ position: absolute; width: 24vw; height: 28vw;}
 .p-img{ position: relative; margin: 0 auto; margin-top: 16vh; width: 24vw; height: 24vw; border-radius: 4px; background-color: #f7f9fc;}
 
-footer{position: relative; z-index: 0;}
+footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; padding:0}
 
 @media (max-width: 600px){
   h1{font-size:5vw;}
