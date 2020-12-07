@@ -1,5 +1,5 @@
 body{background-color:#ffffff; color:#27304d; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 2vh; font-weight: 400; position:relative; margin:0 auto;}
-h1{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 4.6vh; font-weight: 700; letter-spacing: -0.2px;}
+h1{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 2.4vw; font-weight: 700; letter-spacing: -0.2px;}
 p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 2.4vh; line-height: 5.76vh; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
 .eng{font-family:'Roboto',sans-serif; font-weight:400; letter-spacing: -0.2px;}
 
@@ -33,7 +33,7 @@ ul.title li h1{position: relative; left: 5vw; line-height: 12vh;}
 .content-r{position: relative; padding-bottom: 4.6vh;}
 .content-s{position: relative; padding-bottom: 4.6vh; z-index: 5;}
 .content-solid h1{margin-bottom: 6vh;}  .content-solid p{width:40vw;}
-.content-s h1{position: relative; left: 50vw; width: 40vw; margin-top: 4vh; font-size: 4vh;}
+.content-s h1{position: relative; left: 50vw; width: 40vw; margin-top: 4vh; font-size: 2vw;}
 .content-s p{position: relative; left: 50vw; width: 40vw; margin-top: 2vh;}
 .text-title{font-weight:700;}
 
