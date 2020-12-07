@@ -21,7 +21,6 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 ul.title{list-style-type: none; width: 100%; margin: 0; padding: 0;}
 ul.title li{position: relative; width: 100%; height: 12vh;}
 ul.title li h1{position: relative; left: 5vw; line-height: 12vh;}
-ul.title li h1::after{content:'\e806'; font-family:'fontello'; margin-left: 20px;}
 
 .content-wrapper{position:relative; width:100%; height: 504vh; margin:0; display:none;}
 .content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; display: none;}
@@ -41,7 +40,7 @@ ul.title li h1::after{content:'\e806'; font-family:'fontello'; margin-left: 20px
 .motion{position: absolute; left: 55vw; top: 0vh; width: 40vw;}
 .ui{position: sticky; left: 5vw; top: 16vh; width: 48vw; z-index: 4;}
 
-.full-motion{position:absolute; left: 30vw; top:0vh; width: 40vw;}
+.full-motion{position:absolute; width: 48vw; left: 21vw;}
 .motion-s{position: fixed; left: 0.8vw; top: 14vh; width: 54.7vw; display: none;}
 
 #reference-title{position: relative; width: 100%; z-index: 0; height: 12vh; background-color: #f7f9fc;}
