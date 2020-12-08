@@ -1,6 +1,6 @@
 body{background-color:#ffffff; color:#27304d; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 2vh; font-weight: 400; position:relative; margin:0 auto;}
 h1{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 2.4vw; font-weight: 700; letter-spacing: -0.2px;}
-p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 1.28vw; line-height: 3vw; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
+p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 12pt; line-height: 24pt; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
 .eng{font-family:'Roboto',sans-serif; font-weight:400; letter-spacing: -0.2px;}
 
 .scroll-top{position: fixed; top:0px; right: 0; z-index: 16; color: yellow; z-index: -12;}
