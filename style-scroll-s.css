@@ -20,9 +20,9 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 .domain-text{position: relative; top:10vh; left:12vw; color: #ff6200;}
 .domain-text p{font-size: 1.2rem; line-height: 2.4rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
 
-.character{position:relative; width: 100%; height: 56.25vw; z-index: 0;}
-.character lottie-player{display: none;}
-
+.character{position:sticky; top:0; left: 0; width: 100%; height: 200vh; z-index: 0;}
+.first{position: absolute; top:0; left: 0; width:100vw; height: 100vh; overflow-y:hidden; z-index:1;}
+.second{position: absolute; top:0; left: 0; width:100vw; height: 100vh; overflow-y:hidden; z-index:0;}
 
 #contents{position: relative; width: 100%; z-index: 0;}
 ul.title{list-style-type: none; width: 100%; margin: 0; padding: 0;}
@@ -34,7 +34,7 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 
 
 .content-wrapper{position:relative; width:100%; height: 504vh; margin:0; display:none;}
-.b-wrapper{background-color: #27304d; color: #ffffff;} .r-wrapper{height: 420vh;background-color: #ff6200; color: #ffffff;} .s-wrapper{height: 440vh;background-color: #ffffff;}
+.b-wrapper{background-color: #27304d; color: #ffffff;} .r-wrapper{height: 420vh;background-color: #ff6200; color: #ffffff; z-index: 5;} .s-wrapper{height: 440vh;background-color: #ffffff; z-index:8;}
 .content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; display: none;}
 .s-solid{height: 440vh;}
 .chapter{width: 100%; height: 4vh;}
