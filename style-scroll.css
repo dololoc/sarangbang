@@ -7,7 +7,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 .content-top{position: fixed; top:16vh; right: 0; color: yellow; z-index:-12;}
 .scroller-top{position: fixed; top: 80vh; right: 0; color: yellow; z-index:-12;}
 .scroller-bottom{position: fixed; top: 90vh; right: 0; color: yellow; z-index:-12;}
-.ui-anchor{position: fixed; top: 24vh; right: 0; color: yellow; z-index:16;}
+.ui-anchor{position: fixed; top: 24vh; right: 0; color: yellow; z-index:-12;}
 
 .top{position: absolute; top:0; right: 0; color: red; z-index:-12;}
 /* .bottom{position:absolute; right: 0; color: red; z-index:-12;} */
