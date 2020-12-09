@@ -3,51 +3,58 @@ h1{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sa
 p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 1.2rem; line-height: 2.4rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
 .eng{font-family:'Roboto',sans-serif; font-weight:400; letter-spacing: -0.2px;}
 
-.scroll-top{position: fixed; top:0px; right: 0; z-index: 16; color: yellow; z-index: -12;}
-.content-top{position: fixed; top:16vh; right: 0; z-index: 16; color: yellow; z-index: -12;}
-.scroller-top{position: fixed; top: 80vh; right: 0; z-index: 16; color: yellow; z-index: -12;}
-.scroller-bottom{position: fixed; top: 90vh; right: 0; z-index: 16; color: yellow; z-index: -12;}
-.ui-anchor{position: fixed; top: 24vh; right: 0; z-index: 16; color: yellow; z-index: -12;}
+.scroll-top{position: fixed; top:0px; right: 0; color: yellow; z-index:-12;}
+.content-top{position: fixed; top:16vh; right: 0; color: yellow; z-index:-12;}
+.scroller-top{position: fixed; top: 80vh; right: 0; color: yellow; z-index:-12;}
+.scroller-bottom{position: fixed; top: 90vh; right: 0; color: yellow; z-index:-12;}
+.ui-anchor{position: fixed; top: 24vh; right: 0; color: yellow; z-index:-12;}
 
-.top{position: absolute; top:0; right: 0; z-index:16; color: red; z-index: -12;}
-.bottom{position:absolute; right: 0; z-index: 16; color: red; z-index: -12;}
+.top{position: absolute; top:0; right: 0; color: red; z-index:-12;}
+/* .bottom{position:absolute; right: 0; color: red; z-index:-12;} */
 
-#introvid,#outrovid{background-color:#424242; position: relative; width: 100%; height: 100vh; overflow-y:hidden;}
+#introvid,#outrovid{background-color:#000000; position: relative; width: 100%; height: 100vh; overflow-y:hidden;}
+.vid-exp{position: relative top: 4vh; width: 16vw; color: #ffffff;}
+
 #domain{position:relative; width: 100%; height: 100vh; z-index: 0; overflow-y:hidden;}
-#domain-text{position: relative; top:10vh; left:5vw; color: #ffffff;}
+#domain-text{position: relative; top:10vh; left:12vw; color: #ffffff;}
 #domain-text p{font-size: 2vh; line-height: 3.7vh; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
 
 #contents{position: relative; width: 100%; z-index: 0;}
 ul.title{list-style-type: none; width: 100%; margin: 0; padding: 0;}
 ul.title li{position: relative; width: 100%; height: 12vh;}
-ul.title li h1{position: relative; left: 5vw; line-height: 12vh;}
+ul.title li h1{position: relative; left: 12vw; line-height: 12vh;}
+
+ol.bottom-list{position: absolute; right: 0; color: red; z-index:16; height: 420vh;}
+ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
+
 
 .content-wrapper{position:relative; width:100%; height: 504vh; margin:0; display:none;}
+.r-wrapper{height: 420vh;} .s-wrapper{height: 440vh;}
 .content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; display: none;}
 .chapter{width: 100%; height: 4vh;}
 
 .chapter-bar{position:relative; left:4px; top: 0vh; width:100%; height:1vh;background-color:#ffffff;}
 
-.content-area{position: absolute; top:4vh; left: 5vw; width: 90vw;}
+.content-area{position: absolute; top:4vh; left: 12vw; width: 76vw;}
 .content-b{position: relative; padding-bottom: 4.6vh;}
 .content-r{position: relative; padding-bottom: 4.6vh;}
 .content-s{position: relative; padding-bottom: 4.6vh; z-index: 5;}
-.content-solid h1{margin-bottom: 6vh;}  .content-solid p{width:40vw;}
-.content-s h1{position: relative; left: 50vw; width: 40vw; margin-top: 4vh; font-size: 2vw;}
-.content-s p{position: relative; left: 50vw; width: 40vw; margin-top: 2vh;}
+.content-solid h1{font-size: 1.2rem; line-height: 2.4rem; margin-bottom: 4.8rem;}  .content-solid p{width:35vw;}
+.content-s h1{position: relative; left: 41vw; width: 35vw; margin-top: 4vh;}
+.content-s p{position: relative; left: 41vw; width: 35vw; margin-top: 2vh;}
 .text-title{font-weight:700;}
 
-.motion{position: absolute; left: 55vw; top: 0vh; width: 40vw;}
-.ui{position: sticky; left: 5vw; top: 16vh; width: 48vw; z-index: 4;}
+.motion{position: absolute; left: 53vw; top: 10vh; width: 35vw;}
+.ui{position: sticky; left: 12vw; top: 16vh; width: 35vw; z-index: 4;}
 
-.full-motion{position:absolute; width: 48vw; left: 21vw;}
-.motion-s{position: fixed; left: 0.8vw; top: 14vh; width: 54.7vw; display: none;}
+.full-motion{position:absolute; width: 48vw; left: 14vw;}
+.motion-s{position: fixed; left: 8.9vw; top: 14.8vh; width: 40vw; display: none;}
 
 #reference-title{position: relative; width: 100%; z-index: 0; height: 12vh; background-color: #f7f9fc;}
-#reference-title h1{position: relative; left: 5vw; line-height: 12vh;}
+#reference-title h1{position: relative; left: 12vw; line-height: 12vh;}
 #reference-solid{position: relative; width: 100%; height: 96vh; margin-top: 0px; background-color: #f7f9fc;}
-ul.reference-list{list-style-type: none; position: relative; margin: 0; top: 2vh; padding: 0; left: 5vw;}
-ul.reference-list li{position: relative; font-size: 2.4vh; line-height: 5.76vh; font-weight: 400;}
+ul.reference-list{list-style-type: none; position: relative; margin: 0; top: 2vh; padding: 0; left: 12vw;}
+ul.reference-list li{position: relative; font-size: 2vh; line-height: 3.7vh; font-weight: 400;}
 
 #profile{position:relative; width:100%; height:84vh; left: 0; margin:0 auto; z-index:0; background-color: #ffffff;}
 .member{ position: absolute; width: 24vw; height: 28vw;}
@@ -55,19 +62,28 @@ ul.reference-list li{position: relative; font-size: 2.4vh; line-height: 5.76vh; 
 
 footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; padding:0}
 
-@media (max-width: 600px){
-  h1{font-size:5vw;}
-  .motion{display:none;}
-  .hover-me{display:none;}
-  .content-area{margin-top: 4vh; left: 8vw;}
-  .content-solid{height:320vh;}
-  .content-solid p{width: 100%;}
-  .content-s p{width:84vw;top:4vh;left:-8vw;z-index:0;}
-  .ui{top: 14vh; width: 84vw;z-index:8;}
-  .ui-area{position:relative; width:100vw; height:64vw; background-color: #ffffff;}
+@media (max-width: 640px){
+  body{width: auto;}
+  .vid-exp{position: absolute; top: 66vh; left: 4vw; width: 92%;}
+  .vid-exp h1{margin-bottom: 1rem;}
+  h1{font-size:1rem;} p{font-size: 0.9rem; line-height: 1.8rem;}
+  #domain-text{left: 4vw; top: 4vh; width: 92%;} #domain-text br{display: none;}
+  ul.title li{height: 8vh;} ul.title li h1{left: 4vw; font-size: 1.4rem; line-height: 8vh;}
+  .content-wrapper{display: block;}
+  .b-wrapper{height:1188vw;} .r-wrapper{height:1000vw;} .s-wrapper{height: 920vw;}
+  ol.bottom-list li{top: 100vh;height: 100vh;}
+  .content-solid{display: block; height: 216vw;}
+  .short-solid{height: 108vw;}
+  .chapter{display: none;}
+  .content-area{position:relative; margin-top: 0vh; left: 4vw; width: 92%;}
+  .motion{position: relative; left: 4vw; width: 92%;}
+  .full-motion{width: 92vw; left:0;}
+  .content-solid h1{margin-bottom: 4vh;} .content-solid p{width: 100%;}
+  .content-s h1{width:100%;top:4vh;left: 0; z-index:0;} .content-s p{width:100%;top:4vh;left: 0; z-index:0;}
+  .ui{top: 14vh; left: 4vw; width: 92vw;z-index:8;}
   .motion-s{top:12.8vh; left:0.8vw; width:96vw;z-index:6;}
   #reference-solid{height: 160vh;}
-  ul.reference-list{width: 84vw;}
+  ul.reference-list{left: 4vw; width: 92vw;}
   ul.reference-list li{height: 8.8vh;}
-  footer{width: 500vw; margin-left:-200vw;}
+  footer{width: 400vw; margin-left:-150vw;}
 }
