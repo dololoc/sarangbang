@@ -43,7 +43,7 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .content-r{position: relative; padding-bottom: 4.6vh;}
 .content-s{position: relative; padding-bottom: 4.6vh; z-index: 5;}
 .content-solid h1{font-size: 1.2rem; line-height: 2.4rem; margin-bottom: 4.8rem;}  .content-solid p{width:35vw;}
-.content-s h1{position: relative; left: 41vw; width: 35vw; margin-top: 4.8rem;}
+.content-s h1{position: relative; left: 41vw; width: 35vw; margin-top: 4.8rem; margin-bottom: 2.4rem;}
 .content-s p{position: relative; left: 41vw; width: 35vw; margin-top: 2.4rem;}
 .text-title{font-weight:700;}
 
