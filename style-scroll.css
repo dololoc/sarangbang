@@ -29,7 +29,7 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 
 
 .content-wrapper{position:relative; width:100%; height: 504vh; margin:0; display:none;}
-.r-wrapper{height: 420vh;} .s-wrapper{height: 440vh;}
+.b-wrapper{background-color: #27304d; color: #ffffff;} .r-wrapper{height: 420vh;background-color: #ff6200; color: #ffffff;} .s-wrapper{height: 440vh;background-color: #ffffff;}
 .content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; display: none;}
 .s-solid{height: 440vh;}
 .chapter{width: 100%; height: 4vh;}
