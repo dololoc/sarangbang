@@ -106,6 +106,7 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
   #profile{height: 168vw; padding-top: 8vw;}
   .p-img{margin-top: 0;}
   .logo{width: 52vw;}
+  .prof-logo{left: 4vw; width: 52vw;}
   .member{top:76vw; left: 4vw; width: 92vw;} .p-img{margin-left: 0;}
   .member p{position:absolute; margin-left: 28vw; margin-top: -14vw;}
   .bmember{top: 104vw;}
