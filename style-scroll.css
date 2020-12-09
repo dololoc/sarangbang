@@ -13,6 +13,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 /* .bottom{position:absolute; right: 0; color: red; z-index:-12;} */
 
 #introvid,#outrovid{background-color:#000000; position: relative; width: 100%; height: 100vh; overflow-y:hidden;}
+#intro-vimeo, #outro-vimeo{position:absolute;top:0vh;left:0vw;width:100vw;height:100vh;}
 .vid-exp{position: relative top: 4vh; width: 16vw; color: #ffffff;}
 
 #domain{position:relative; width: 100%; height: 100vh; z-index: 0; overflow-y:hidden;}
@@ -21,7 +22,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 
 #contents{position: relative; width: 100%; z-index: 0;}
 ul.title{list-style-type: none; width: 100%; margin: 0; padding: 0;}
-ul.title li{position: relative; width: 100%; height: 12vh;}
+ul.title li{position: relative; width: 100%;}
 ul.title li h1{position: relative; left: 12vw; line-height: 12vh;}
 
 ol.bottom-list{position: absolute; right: 0; color: red; z-index:-12; height: 420vh;}
@@ -37,6 +38,7 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .chapter-bar{position:relative; left:4px; top: 0vh; width:100%; height:1vh;background-color:#ffffff;}
 
 .content-area{position: absolute; top:4vh; left: 12vw; width: 76vw;}
+.s-wrapper .content-area{margin-top: 24vh;}
 .content-b{position: relative; padding-bottom: 4.6vh;}
 .content-r{position: relative; padding-bottom: 4.6vh;}
 .content-s{position: relative; padding-bottom: 4.6vh; z-index: 5;}
@@ -47,52 +49,66 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 
 .motion{position: absolute; left: 53vw; top: 10vh; width: 35vw;}
 .ui{position: sticky; left: 12vw; top: 16vh; width: 35vw; z-index: 4;}
-.ui-name{position: absolute; top: 28vw; display: none;}
+.ui-name{position: absolute; top: 28vw; display: none; font-weight: 700;}
 
 .full-motion{position:absolute; width: 48vw; left: 14vw;}
 .motion-s{position: fixed; left: 8.9vw; top: 14.8vh; width: 40vw; display: none;}
+.motion-s-left{left: 8.4vw;}
 
 #reference-title{position: relative; width: 100%; z-index: 0; height: 12vh; background-color: #f7f9fc;}
 #reference-title h1{position: relative; left: 12vw; line-height: 12vh;}
-#reference-solid{position: relative; width: 100%; height: 96vh; margin-top: 0px; background-color: #f7f9fc;}
+#reference-solid{position: relative; width: 100%; height: 72vh; margin-top: 0px; background-color: #f7f9fc;}
 ul.reference-list{list-style-type: none; position: relative; margin: 0; top: 2vh; padding: 0; left: 12vw;}
 ul.reference-list li{position: relative; font-size: 2vh; line-height: 3.7vh; font-weight: 400;}
 
-#profile{position:relative; width:100%; height:84vh; left: 0; margin:0 auto; z-index:0; background-color: #ffffff;}
-.member{ position: absolute; width: 24vw; height: 28vw;}
+#profile{position:relative; width:100%; height:92vh; margin:0 auto; z-index:0; background-color: #ffffff;}
+.prof-logo{position:absolute; top:4vh; left: 12vw; width: 240px;}
+.member{ position: absolute; top:320px; width: 24vw; height: 28vw;}
 .amember{left: 12vw;} .bmember{left: 38vw;} .cmember{left: 64vw;}
-.p-img{ position: relative; margin: 0 auto; margin-top: 16vh; width: 24vw; height: 24vw; border-radius: 4px; background-color: #f7f9fc;}
+.p-img{ position: relative; margin: 0 auto; margin-top: 0vh; width: 24vw; height: 24vw; border-radius: 4px; background-color: #f7f9fc;}
+
+#thanksto{position:relative; width:100%; height: 80vh; margin: 0 auto; z-index: 0; background-color: #ffffff;}
+#thanksto h1{position:absolute; left: 12vw; top: 0;}
+ul.thanks-name{position:absolute; margin:0; padding:0; left: 12vw; top: 5.2vw;}
+ul.thanks-name li{list-style-type: none; margin:0; padding:0; line-height: 3rem;}
+ul.thanks-name li p{font-weight: 700;}
 
 footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; padding:0}
 
-@media (max-width: 640px){
+@media (max-width: 720px){
   .ui-anchor{display:none;}
   body{width: auto;}
-  .vid-exp{position: absolute; top: 66vh; left: 4vw; width: 92%;}
+  #intro-vimeo, #outro-vimeo{position:absolute;top:-24vw;}
+  .vid-exp{position: absolute; top: 60vh; left: 4vw; width: 92%;}
   .vid-exp h1{margin-bottom: 1rem;}
   h1{font-size:1rem;} p{font-size: 0.9rem; line-height: 1.8rem;}
   #domain-text{left: 4vw; top: 4vh; width: 92%;} #domain-text br{display: none;}
   ul.title li{height: 8vh;} ul.title li h1{left: 4vw; font-size: 1.4rem; line-height: 8vh;}
   .content-wrapper{display: block;}
-  .b-wrapper{height:1188vw;} .r-wrapper{height:972vw;} .s-wrapper{height: 920vw; top: 0;}
+  .b-wrapper{height:1188vw;} .r-wrapper{height:972vw;} .s-wrapper{height: 1380vw; top: -20vw;}
   ol.bottom-list{display: none;}
   .content-solid{display: block; height: 216vw;}
   .short-solid{height: 108vw;}
   .chapter{display: none;}
   .content-area{position:relative; margin-top: 0vh; left: 4vw; width: 92%;}
-  .motion{position: relative; left: 4vw; width: 92%; top: 8vw;}
+  .motion{position: relative; left: 2vw; width: 92%; top: 8vw;}
+  .motion-left{left: 0vw;}
   .full-motion{width: 92vw; left:0;}
   .content-solid h1{margin-bottom: 4vh;} .content-solid p{width: 100%;}
-  .content-s h1{width:100%;top:4vh;left: 0; z-index:0;} .content-s p{width:100%;top:4vh;left: 0; z-index:0;}
-  .ui{position:absolute; top: 0vh; left: 4vw; width: 92vw;z-index:8;}
-  .motion-s{top:12.8vh; left:0.8vw; width:96vw;z-index:6;}
-  .ui-name{top: 75vw;}
-  #reference-solid{height: 160vh;}
+  .s-title{margin-top: 6px;} .s-wrapper .content-area{position: absolute; margin-top: 0vw;}
+  .content-s{height: 80vw; margin-top: 72vw; padding-bottom: 4vw;}
+  .content-s h1{width:100%;top:4vh;left: 0; z-index:0;} .content-s p{width:100%;top:0;left: 0; z-index:0;}
+  .ui{display: none;} .ui-area{position: absolute; top:-12vw; left: 4vw; height: 920vw;}
+  .motion-s{display:block; position: relative; margin-bottom: 84vw; ; display: block; left:-4vw; width:96vw;z-index:6;}
+  .motion-s-left{left: -6vw;} .motion-s-top{margin-top: -12vw; margin-bottom: 96vw;}
+  #reference-solid{height: 280vw;}
   ul.reference-list{left: 4vw; width: 92vw;}
-  ul.reference-list li{height: 8.8vh;}
-  .member{left: 4vw; width: 92vw;} .p-img{margin-left: 0;}
+  #profile{height: 168vw; padding-top: 8vw;}
+  .p-img{margin-top: 0;}
+  .logo{width: 52vw;}
+  .member{top:76vw; left: 4vw; width: 92vw;} .p-img{margin-left: 0;}
   .member p{position:absolute; margin-left: 28vw; margin-top: -14vw;}
-  .bmember{top: 28vw;}
-  .cmember{top: 56vw;}
+  .bmember{top: 104vw;}
+  .cmember{top: 132vw;}
   footer{width: 400vw; margin-left:-150vw;}
 }
