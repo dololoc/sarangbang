@@ -176,12 +176,22 @@
         </div>
       </div>
       </div>
-        <li class="title-solid" style="position:sticky; top:0; z-index: 10; background-color: #ffffff; border-bottom: 0px solid #ffffff;"><h1>우리동네 사랑방을 소개합니다</h1></li>
+        <li class="title-solid s-title" style="position:sticky; top:0; z-index: 10; background-color: #ffffff; border-bottom: 0px solid #ffffff;"><h1>우리동네 사랑방을 소개합니다</h1></li>
         <div class="chapter" style="position:sticky; top:12vh; z-index: 10; background-color: #ffffff; border-bottom: 2px solid #ffffff;"><div class="chapter-bar" style="background-color:#27304d;"></div></div>
       <div class="content-wrapper s-wrapper">
-      <div class="content-solid" style="background-color: #ffffff; height: 440vh;">
-
-        <img class="ui" src="img/ipadpro4.png" alt="" width=100%>
+      <div class="content-solid s-solid" style="background-color: #ffffff;">
+        <div class="ui">
+          <img src="img/ipadpro4.png" alt="" style="width: 100%;">
+          <p class="ui-name">메인 화면</p>
+          <p class="ui-name">메인 화면-미리듣기 기능</p>
+          <p class="ui-name">음성 에이전트</p>
+          <p class="ui-name">노인의 음성 에이전트 선호도</p>
+          <p class="ui-name">모든 방 보기</p>
+          <p class="ui-name">수다방 화면</p>
+          <p class="ui-name">티비방 화면</p>
+          <p class="ui-name">게임방 화면</p>
+          <p class="ui-name">노래방 화면</p>
+        </div>
         <div class="ui-area">
           <video class="motion-s" src="vid/0-main.mp4" autoplay muted style="left: 8.4vw;"></video>
           <video class="motion-s" src="vid/1-door.mp4" autoplay loop muted></video>
@@ -195,7 +205,7 @@
           <video class="motion-s" src="vid/7-sing.mp4" autoplay muted></video>
         </div>
         <div class="content-area">
-          <div class="content-s">
+          <div class="content-s" style="margin-top: 24vh;">
             <h1>채널형 인터페이스를 메인으로 하여 설계되었습니다.</h1>
             <p>메인에 접속할 시, 사용자인 어르신과 가장 친숙하고 아는 사람이 많은 방, 혹은 사용 패턴에 따른 가장 적합한 방을 먼저 볼 수 있게 됩니다. 예를 들어 주로 수다방에서 친구들과 대화를 자주 나누시는 어르신의 경우 수다방이 가장 메인 화면에 표시됨으로써, 보다 쉽고 간편하게 접속할 수 있습니다. 또한, 대화를 나누는 상대나 만남을 갖는 목적이 뚜렷하지 않은 어르신들의 커뮤니케이션 방식에 따라 설계되어 어르신들이 이용하기에 낯설지 않고 자연스럽게 사용법을 체득할 수 있습니다. 좌우로 이동하며 채널을 이동하듯이 살펴 볼 수 있습니다.</p>
           </div>
@@ -260,16 +270,16 @@
     </ul>
   </div>
   <div id="profile">
-    <div class="member" style="left: 8vw;">
-      <div class="p-img"><img src="img/m1.png" alt="" width=100%></div>
+    <div class="member amember">
+      <div class="p-img"><img src="img/m1.png" alt="" style="width:24vw"></div>
       <p style="font-weight:700;">김유진  /moremorethan@naver.com</p>
     </div>
-    <div class="member" style="left: 36vw;">
-      <div class="p-img"><img src="img/m2.png" alt="" width=100%></div>
+    <div class="member bmember">
+      <div class="p-img"><img src="img/m2.png" alt="" style="width:24vw"></div>
       <p style="font-weight:700;">도은채  /dololoccc@gmail.com</p>
     </div>
-    <div class="member" style="left: 64vw;">
-      <div class="p-img"><img src="img/m3.png" alt="" width=100%></div>
+    <div class="member cmember">
+      <div class="p-img"><img src="img/m3.png" alt="" style="width:24vw"></div>
       <p style="font-weight:700;">최호진  /hojinchoi@kakao.com</p>
     </div>
   </div>
@@ -282,7 +292,7 @@
         var jdx = 0;
         var f1 = [1,1,1,1,1,1,1,1,1,1];
         var f2 = [1,1,1,1,1,1,1,1,1,1];
-        var windowwidth = $(window).width();
+        var windowwidth = $(window).width(); noAnchor();
         var titleHeight = $(window).height()*16/100;
         var classforTop = $('.top');
         var classforBottom = $('.bottom');
@@ -290,6 +300,26 @@
         var classforSmotion = $('.motion-s');
         var classforBar = $('.chapter-bar');
         var classforWrapper = $('.content-wrapper');
+        var classforUiname = $('.ui-name');
+        var classforUi = $('.ui');
+
+        function noAnchor(){
+          if(windowwidth<= 640){
+            f1 = [0,0,0,0,0,0,0,0,0,0];
+            f2 = [0,0,0,0,0,0,0,0,0,0];
+          }
+        }
+
+        var offsettopSol = $('.s-title').offset().top;
+        function fixUI(){
+          if(windowwidth<=640){
+            var nowTop = $('html,body').scrollTop();
+            if(offsettopSol < nowTop && nowTop< 13300){
+              classforUi.css({top:nowTop-offsettopSol});
+              console.log(nowTop);
+            }
+          }
+        }
 
         function topAnchor(e1){
           var scrollerT = $('.scroller-top'); var Ttop = scrollerT.offset().top;
@@ -338,6 +368,8 @@
           if(Utop<Stop && Stop<Utop+40){
             classforSmotion.eq(e4).show();
             classforSmotion.eq(e4).siblings().hide();
+            classforUiname.eq(e4).show();
+            classforUiname.eq(e4).siblings('.ui-name').hide();
             console.log(e4);
           }else if(solution()){classforSmotion.hide();}
         }
@@ -371,6 +403,11 @@
             Animatebar(index+2);
           })
         })
+
+        $(document.body).on('touchmove', onScroll); // for mobile
+        function onScroll{
+          fixUI();
+        }
     });
   </script>
 

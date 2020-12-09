@@ -7,7 +7,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 .content-top{position: fixed; top:16vh; right: 0; color: yellow; z-index:-12;}
 .scroller-top{position: fixed; top: 80vh; right: 0; color: yellow; z-index:-12;}
 .scroller-bottom{position: fixed; top: 90vh; right: 0; color: yellow; z-index:-12;}
-.ui-anchor{position: fixed; top: 24vh; right: 0; color: yellow; z-index:-12;}
+.ui-anchor{position: fixed; top: 24vh; right: 0; color: yellow; z-index:16;}
 
 .top{position: absolute; top:0; right: 0; color: red; z-index:-12;}
 /* .bottom{position:absolute; right: 0; color: red; z-index:-12;} */
@@ -24,13 +24,14 @@ ul.title{list-style-type: none; width: 100%; margin: 0; padding: 0;}
 ul.title li{position: relative; width: 100%; height: 12vh;}
 ul.title li h1{position: relative; left: 12vw; line-height: 12vh;}
 
-ol.bottom-list{position: absolute; right: 0; color: red; z-index:16; height: 420vh;}
+ol.bottom-list{position: absolute; right: 0; color: red; z-index:-12; height: 420vh;}
 ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 
 
 .content-wrapper{position:relative; width:100%; height: 504vh; margin:0; display:none;}
 .r-wrapper{height: 420vh;} .s-wrapper{height: 440vh;}
 .content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; display: none;}
+.s-solid{height: 440vh;}
 .chapter{width: 100%; height: 4vh;}
 
 .chapter-bar{position:relative; left:4px; top: 0vh; width:100%; height:1vh;background-color:#ffffff;}
@@ -46,6 +47,7 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 
 .motion{position: absolute; left: 53vw; top: 10vh; width: 35vw;}
 .ui{position: sticky; left: 12vw; top: 16vh; width: 35vw; z-index: 4;}
+.ui-name{position: absolute; top: 28vw; display: none;}
 
 .full-motion{position:absolute; width: 48vw; left: 14vw;}
 .motion-s{position: fixed; left: 8.9vw; top: 14.8vh; width: 40vw; display: none;}
@@ -58,11 +60,13 @@ ul.reference-list li{position: relative; font-size: 2vh; line-height: 3.7vh; fon
 
 #profile{position:relative; width:100%; height:84vh; left: 0; margin:0 auto; z-index:0; background-color: #ffffff;}
 .member{ position: absolute; width: 24vw; height: 28vw;}
+.amember{left: 12vw;} .bmember{left: 38vw;} .cmember{left: 64vw;}
 .p-img{ position: relative; margin: 0 auto; margin-top: 16vh; width: 24vw; height: 24vw; border-radius: 4px; background-color: #f7f9fc;}
 
 footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; padding:0}
 
 @media (max-width: 640px){
+  .ui-anchor{display:none;}
   body{width: auto;}
   .vid-exp{position: absolute; top: 66vh; left: 4vw; width: 92%;}
   .vid-exp h1{margin-bottom: 1rem;}
@@ -70,20 +74,25 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
   #domain-text{left: 4vw; top: 4vh; width: 92%;} #domain-text br{display: none;}
   ul.title li{height: 8vh;} ul.title li h1{left: 4vw; font-size: 1.4rem; line-height: 8vh;}
   .content-wrapper{display: block;}
-  .b-wrapper{height:1188vw;} .r-wrapper{height:1000vw;} .s-wrapper{height: 920vw;}
-  ol.bottom-list li{top: 100vh;height: 100vh;}
+  .b-wrapper{height:1188vw;} .r-wrapper{height:972vw;} .s-wrapper{height: 920vw; top: 0;}
+  ol.bottom-list{display: none;}
   .content-solid{display: block; height: 216vw;}
   .short-solid{height: 108vw;}
   .chapter{display: none;}
   .content-area{position:relative; margin-top: 0vh; left: 4vw; width: 92%;}
-  .motion{position: relative; left: 4vw; width: 92%;}
+  .motion{position: relative; left: 4vw; width: 92%; top: 8vw;}
   .full-motion{width: 92vw; left:0;}
   .content-solid h1{margin-bottom: 4vh;} .content-solid p{width: 100%;}
   .content-s h1{width:100%;top:4vh;left: 0; z-index:0;} .content-s p{width:100%;top:4vh;left: 0; z-index:0;}
-  .ui{top: 14vh; left: 4vw; width: 92vw;z-index:8;}
+  .ui{position:absolute; top: 0vh; left: 4vw; width: 92vw;z-index:8;}
   .motion-s{top:12.8vh; left:0.8vw; width:96vw;z-index:6;}
+  .ui-name{top: 75vw;}
   #reference-solid{height: 160vh;}
   ul.reference-list{left: 4vw; width: 92vw;}
   ul.reference-list li{height: 8.8vh;}
+  .member{left: 4vw; width: 92vw;} .p-img{margin-left: 0;}
+  .member p{position:absolute; margin-left: 28vw; margin-top: -14vw;}
+  .bmember{top: 28vw;}
+  .cmember{top: 56vw;}
   footer{width: 400vw; margin-left:-150vw;}
 }
