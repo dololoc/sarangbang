@@ -50,13 +50,16 @@
     <img src="img/intro-1.png" style="position:absolute; width:100vw; top:30vh; right:0; z-index:-1;">
   </div>
   <div class="domain">
-    <div class="domain-text" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1500">
-      <h1 style="position:absolute; left:48vw;">우리는<br>화상회의 어플로 수업을 듣고</h1>
+    <div class="domain-text">
+      <h1 data-aos="fade-up" data-aos-delay="20" data-aos-duration="1500" style="position:absolute; left:48vw;">우리는<br>화상회의 어플로 수업을 듣고</h1>
+      <p data-aos="fade-up" data-aos-delay="800" data-aos-duration="400" class="talk-left">학교랑 학원을 못가니 집에서 줌으로 수업을 들어요.<br>답답하지만 온라인 수업이라도 들을 수 있어서 다행이에요.</p>
+      <p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="400" class="talk-right">줌으로 듣는 수업이 때론 더 편하기도 해요.<br>집에서 학교까지 1분도 걸리지 않으니까요.</p>
+      <p data-aos="fade-up" data-aos-delay="1200" data-aos-duration="400" class="talk-left" style="top:44vh;">친구들과 하루종일 디스코드로 게임하며 떠들기도 해요.<br>처음 써봤는데 쉽더라고요!</p>
     </div>
+
     <div class="domain-img">
-      <img src="img/macbook.png" alt="" width=60% style="margin-top: 12vh;">
-      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-      <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_tg5wg9qb.json"  background="transparent"  speed="1"  style="position: absolute; width: 32vw; left: 0; top: 18vh; z-index: 2;"    autoplay></lottie-player>        </div>
+      <img src="img/macbook.png" alt="" width=60% style="position: absolute; top: 12vh; left: 0;">
+      <img src="img/background-platform.png" alt="" width=36% style="position: absolute; top: 24vh; left: 0; z-index: 1;">
     </div>
 
   </div>
@@ -66,8 +69,8 @@
     </div>
   </div>
   <div class="character">
-    <div class="first"><img src="img/character-1.svg" alt="" width=100%></div>
-    <div class="second"><img src="img/character-2.svg" alt="" width=100%></div>
+    <div class="first"><img src="img/character-1.svg" alt="" width=100%><h1 style="color:#ff6200;">우리가<br>그렇게 친구들과 대화할 때</h1></div>
+    <div class="second"><img src="img/character-2.svg" alt="" width=100%><h1 style="color:#ffffff;">모두가<br>그런 것은 아닙니다</h1></div>
   </div>
   <div class="domain" style="background-color: #ffffff;">
     <h1 style="position: relative; left: 12vw; top: 24vh;" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1500"><span style="background-color: #27304d; color: #ffffff;">2020년<br>어르신들의 하루는 어땠을까요</span></h1>
@@ -141,8 +144,8 @@
       </div>
       </div>
       <div class="character" style="z-index: 4;">
-        <div class="first"><img src="img/character-2.svg" alt="" width=100%></div>
-        <div class="second"><img src="img/character-3.svg" alt="" width=100%></div>
+        <div class="first"><img src="img/character-2.svg" alt="" width=100%><h1 style="color:#ffffff;">그렇다면<br>이런 어르신들께</h1></div>
+        <div class="second"><img src="img/character-3.svg" alt="" width=100%><h1 style="color:#ffffff;">필요한 플랫폼은<br>어떤 것 일까요</h1></div>
       </div>
       <div class="domain" style="background-color: #ff6200; z-index: 4;">
 
@@ -205,8 +208,8 @@
       </div>
       </div>
       <div class="character" style="z-index: 7;">
-        <div class="first"><img src="img/character-3.svg" alt="" width=100%></div>
-        <div class="second"><img src="img/character-4.svg" alt="" width=100%></div>
+        <div class="first"><img src="img/character-3.svg" alt="" width=100%><h1 style="color:#ffffff;">어르신들이<br>쉽고 편하게 이용할 수 있도록</h1></div>
+        <div class="second"><img src="img/character-4.svg" alt="" width=100%><h1 style="color:#ff6200;">우리동네 사랑방을<br>소개합니다</h1></div>
       </div>
       <div class="domain" style="background-color: #ffffff; z-index: 7;">
 
@@ -447,7 +450,7 @@
           var nextTop = classforTop.eq(e5+1); var bTop = nextTop.offset().top;
           var viewT = $('.scroll-top'); var vTop = viewT.offset().top;
           if(aTop<vTop && vTop<bTop){
-            classforBar.eq(e5-2).css({width: (vTop-aTop)/(bTop-aTop)*windowwidth});
+            classforBar.eq(e5/3-2).css({width: (vTop-aTop)/(bTop-aTop)*windowwidth});
           }
         }
 
@@ -462,7 +465,7 @@
             uiAnchor(index);
           })
           $.each(classforWrapper, function(index, item){
-            Animatebar(index+2);
+            Animatebar((index+2)*3);
           })
           $.each(classforCharacter, function(index, item){
             scrollforC(index);
