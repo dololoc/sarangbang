@@ -6,4 +6,7 @@
 .icon-globe:before { content: '\e804'; } /* '' */
 .icon-down-dir:before { content: '\e805'; } /* '' */
 .icon-down-open:before { content: '\e806'; } /* '' */
+.icon-rss-alt:before { content: '\e807'; } /* '' */
+.icon-signal:before { content: '\e808'; } /* '' */
 .icon-mouse-pointer:before { content: '\f245'; } /* '' */
+.icon-podcast:before { content: '\f2ce'; } /* '' */
