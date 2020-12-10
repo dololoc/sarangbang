@@ -18,13 +18,25 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 
 .domain{position:relative; width: 100%; height: 100vh; z-index: 0; overflow-y:hidden;}
 .domain-text{position: relative; top:12vh; left:12vw; width: 76vw; height: 76vh; color: #ff6200;}
-.talk-left{position: absolute; left: 48vw; top: 20vh; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
-                width: 21rem; height: 8vh; padding: 0.8rem; background-color: #f7f9fc; color: #27304d; border-radius: 1.2rem; border-top-left-radius: 0;}
-.talk-right{position: absolute; right: 0; top: 32vh;
-            width: 16rem; height: 8vh; padding: 0.8rem;
+
+.domain-text-right{position:absolute; left: 60vw; top: 12vh; width: 28vw; height: 76vh;}
+.domain-text-left{position:absolute; left: 12vw; top: 12vh; width: 28vw; height: 76vh;}
+
+.talk-left{position: absolute; left: 0; margin-left: 40px; top: 20vh; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
+                width: 21rem; height: 4rem; padding: 0.8rem; background-color: #f7f9fc; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;}
+.talk-right{position: absolute; right: 0; top: 24vh; margin-top: 5.6rem;
+            width: 16rem; height: 4rem; padding: 0.8rem;
             font-size: 1rem; line-height: 2rem; font-weight: 500;
             letter-spacing: -0.8px; text-align: justify; background-color: #f0f8ff;
-            color: #27304d; border-radius: 1.2rem; border-top-right-radius: 0;}
+            color: #27304d; border-radius: 2rem; border-top-right-radius: 0;}
+.message-user{position:absolute;top: 20vh; width: 32px; height: 32px; background-color: #f7f9fc; border-radius: 12px;}
+
+.k-talk-left{position: absolute; left: 0; margin-left: 40px; top: 20vh; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
+                width: 13rem; height: 2rem; padding: 0.8rem; background-color: #ffffff; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;
+                box-shadow: 2px 2px 6px 6px #f7f9fc;}
+.k-talk-right{position: absolute; right: 0; top: 22vh; margin-top: 3.6rem; width: 12rem; height: 2rem; padding: 0.8rem; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
+                background-color: #ffdb45; color: #27304d; border-radius: 2rem; border-top-right-radius: 0;
+                box-shadow: 2px 2px 6px 6px #f7f9fc;}
 
 .character{position:sticky; top:0; left: 0; width: 100%; height: 200vh; z-index: 0;}
 .character h1{position: absolute; top: 12vh; left: 64vw; z-index: 2;}
@@ -46,7 +58,7 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .s-solid{height: 440vh;}
 .chapter{width: 100%; height: 4vh;}
 
-.chapter-bar{position:relative; left:4px; top: 0vh; width:100%; height:1vh;background-color:#ffffff;}
+.chapter-bar{position:relative; left:4px; top: 0vh; width:0; height:1vh;background-color:#ffffff;}
 
 .content-area{position: absolute; top:4vh; left: 12vw; width: 76vw;}
 .s-wrapper .content-area{margin-top: 24vh;}
@@ -93,7 +105,8 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
   .vid-exp{position: absolute; top: 60vh; left: 4vw; width: 92%;}
   .vid-exp h1{margin-bottom: 1rem;}
   h1{font-size:1rem;} p{font-size: 0.9rem; line-height: 1.8rem;}
-  #domain-text{left: 4vw; top: 4vh; width: 92%;} #domain-text br{display: none;}
+  .domain-text{left: 4vw; top: 4vh; width: 92%;} .domain-text br{display: none;}
+  .character h1{font-size: 1.4rem; left: 4vw; width: 92vw;}
   ul.title li{height: 8vh;} ul.title li h1{left: 4vw; font-size: 1.4rem; line-height: 8vh;}
   .content-wrapper{display: block;}
   .b-wrapper{height:1188vw;} .r-wrapper{height:972vw;} .s-wrapper{height: 1380vw; top: -20vw;}
