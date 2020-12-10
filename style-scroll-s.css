@@ -31,6 +31,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
             letter-spacing: -0.8px; text-align: justify; background-color: #f0f8ff;
             color: #27304d; border-radius: 2rem; border-top-right-radius: 0;}
 .message-user{position:absolute;top: 20vh; width: 32px; height: 32px; background-color: #f7f9fc; border-radius: 12px;}
+.podcast::before{content: '\f2ce'; font-family: fontello; margin-right: 1rem; color: #ff6200;}
 
 .k-talk-left{position: absolute; left: 0; margin-left: 40px; top: 20vh; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
                 width: 13rem; height: 2rem; padding: 1.2rem; background-color: #ffffff; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;
