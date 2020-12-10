@@ -53,7 +53,7 @@ ol.bottom-list{position: absolute; right: 0; color: red; z-index:-12; height: 42
 ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 
 
-.content-wrapper{position:relative; width:100%; height: 504vh; margin:0; display:none;}
+.content-wrapper{position:relative; width:100%; height: 504vh; margin:0;}
 .b-wrapper{background-color: #27304d; color: #ffffff;} .r-wrapper{height: 420vh;background-color: #ff6200; color: #ffffff; z-index: 5;} .s-wrapper{height: 440vh;background-color: #ffffff; z-index:8;}
 .content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; display: none;}
 .s-solid{height: 440vh;}
