@@ -51,7 +51,7 @@ ul.title li{position: relative; width: 100%;}
 ul.title li h1{position: relative; left: 12vw; line-height: 16vh; font-weight: 300;}
 
 ol.bottom-list{position: absolute; right: 0; color: red; z-index:-12; height: 420vh;}
-ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
+ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0; z-index: -12;}
 
 
 .content-wrapper{position:relative; width:100%; height: 504vh; margin:0;}
