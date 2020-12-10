@@ -1,6 +1,6 @@
 body{background-color:#ffffff; color:#27304d; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 2vh; font-weight: 400; position:relative; margin:0 auto;}
 h1{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 2.4vw; font-weight: 700; letter-spacing: -0.2px;}
-p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 1.2rem; line-height: 2.6rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
+p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 1.12rem; line-height: 2.4rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
 .eng{font-family:'Roboto',sans-serif; font-weight:400; letter-spacing: -0.2px;}
 
 .scroll-top{position: fixed; top:0px; right: 0; color: yellow; z-index:-12;}
@@ -66,7 +66,7 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .content-b{position: relative; padding-bottom: 4.6vh;}
 .content-r{position: relative; padding-bottom: 4.6vh;}
 .content-s{position: relative; padding-bottom: 4.6vh; z-index: 5;}
-.content-solid h1{font-size: 1.2rem; line-height: 2.4rem; margin-bottom: 4.8rem;}  .content-solid p{width:34vw;}
+.content-solid h1{font-size: 1.12rem; line-height: 2.4rem; margin-bottom: 4.8rem;}  .content-solid p{width:34vw;}
 .content-s h1{position: relative; left: 41vw; width: 35vw; margin-top: 4vh;}
 .content-s p{position: relative; left: 41vw; width: 35vw; margin-top: 2.4rem;}
 .text-title{font-weight:700;}
