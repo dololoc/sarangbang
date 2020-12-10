@@ -17,24 +17,25 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 .vid-exp{position: relative top: 4vh; width: 16vw; color: #ffffff;}
 
 .domain{position:relative; width: 100%; height: 100vh; z-index: 0; overflow-y:hidden;}
+.domain h1{font-size: 2.4rem; line-height: 3.36rem;}
 .domain-text{position: relative; top:12vh; left:12vw; width: 76vw; height: 76vh; color: #ff6200;}
 
 .domain-text-right{position:absolute; left: 60vw; top: 12vh; width: 28vw; height: 76vh;}
 .domain-text-left{position:absolute; left: 12vw; top: 12vh; width: 28vw; height: 76vh;}
 
 .talk-left{position: absolute; left: 0; margin-left: 40px; top: 20vh; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
-                width: 21rem; height: 4rem; padding: 0.8rem; background-color: #f7f9fc; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;}
+                width: 21rem; height: 4rem; padding: 1.2rem; background-color: #f7f9fc; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;}
 .talk-right{position: absolute; right: 0; top: 24vh; margin-top: 5.6rem;
-            width: 16rem; height: 4rem; padding: 0.8rem;
+            width: 16rem; height: 4rem; padding: 1.2rem;
             font-size: 1rem; line-height: 2rem; font-weight: 500;
             letter-spacing: -0.8px; text-align: justify; background-color: #f0f8ff;
             color: #27304d; border-radius: 2rem; border-top-right-radius: 0;}
 .message-user{position:absolute;top: 20vh; width: 32px; height: 32px; background-color: #f7f9fc; border-radius: 12px;}
 
 .k-talk-left{position: absolute; left: 0; margin-left: 40px; top: 20vh; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
-                width: 13rem; height: 2rem; padding: 0.8rem; background-color: #ffffff; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;
+                width: 13rem; height: 2rem; padding: 1.2rem; background-color: #ffffff; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;
                 box-shadow: 2px 2px 6px 6px #f7f9fc;}
-.k-talk-right{position: absolute; right: 0; top: 22vh; margin-top: 3.6rem; width: 12rem; height: 2rem; padding: 0.8rem; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
+.k-talk-right{position: absolute; right: 0; top: 22vh; margin-top: 3.6rem; width: 12rem; height: 2rem; padding: 1.2rem; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
                 background-color: #ffdb45; color: #27304d; border-radius: 2rem; border-top-right-radius: 0;
                 box-shadow: 2px 2px 6px 6px #f7f9fc;}
 
@@ -46,7 +47,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 #contents{position: relative; width: 100%; z-index: 0;}
 ul.title{list-style-type: none; width: 100%; margin: 0; padding: 0;}
 ul.title li{position: relative; width: 100%;}
-ul.title li h1{position: relative; left: 12vw; line-height: 12vh;}
+ul.title li h1{position: relative; left: 12vw; line-height: 16vh; font-weight: 300;}
 
 ol.bottom-list{position: absolute; right: 0; color: red; z-index:-12; height: 420vh;}
 ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
@@ -56,9 +57,9 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .b-wrapper{background-color: #27304d; color: #ffffff;} .r-wrapper{height: 420vh;background-color: #ff6200; color: #ffffff; z-index: 5;} .s-wrapper{height: 440vh;background-color: #ffffff; z-index:8;}
 .content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; display: none;}
 .s-solid{height: 440vh;}
-.chapter{width: 100%; height: 4vh;}
+/* .chapter{width: 100%; height: 4vh;} */
 
-.chapter-bar{position:relative; left:4px; top: 0vh; width:0; height:1vh;background-color:#ffffff;}
+/* .chapter-bar{position:relative; left:4px; top: 0vh; width:0; height:1vh;background-color:#ffffff;} */
 
 .content-area{position: absolute; top:4vh; left: 12vw; width: 76vw;}
 .s-wrapper .content-area{margin-top: 24vh;}
@@ -74,7 +75,7 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .ui{position: sticky; left: 12vw; top: 16vh; width: 35vw; z-index: 4;}
 .ui-name{position: absolute; top: 28vw; display: none; font-weight: 700;}
 
-.full-motion{position:absolute; width: 48vw; left: 14vw;}
+.full-motion{position:absolute; width: 48vw; height:80vh; left: 14vw;}
 .motion-s{position: fixed; left: 8.9vw; top: 14.8vh; width: 40vw; display: none;}
 .motion-s-left{left: 8.4vw;}
 
