@@ -359,10 +359,11 @@
         var classforTitle = $('.classforTitle');
 
         function noAnchor(){
-          if(windowwidth<= 640){
+          if(windowwidth<= 720){
             f1 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
             f2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
             ndx = 0;
+            $('.classforTitle').css('font-weight','300');
           }
         }
 
@@ -418,14 +419,16 @@
         }
 
         function animateTitle(e9){
-          var scrollerT = $('.scroller-top'); var Ttop = scrollerT.offset().top;
-          var scrollerB = $('.scroller-bottom'); var Btop = scrollerB.offset().top;
-          var classbottom = classforBottom.eq(e9); var Bottom = classbottom.offset().top;
-          if(Ttop<Bottom && Bottom<Btop){
-            if(e9<1){classforTitle.eq(e9+1).css('font-weight','900'); classforTitle.eq(e9+1).siblings('.classforTitle').css('font-weight','300');}
-            else if(e9>=1&&e9<8){classforTitle.eq(e9).css('font-weight','900'); classforTitle.eq(e9).siblings('.classforTitle').css('font-weight','300');}
-            else if(e9>=8&&e9<15){classforTitle.eq(e9-1).css('font-weight','900'); classforTitle.eq(e9-1).siblings('.classforTitle').css('font-weight','300');}
-            else if(e9>=15){classforTitle.eq(e9-2).css('font-weight','900'); classforTitle.eq(e9-2).siblings('.classforTitle').css('font-weight','300');}
+          if(ndx==1){
+            var scrollerT = $('.scroller-top'); var Ttop = scrollerT.offset().top;
+            var scrollerB = $('.scroller-bottom'); var Btop = scrollerB.offset().top;
+            var classbottom = classforBottom.eq(e9); var Bottom = classbottom.offset().top;
+            if(Ttop<Bottom && Bottom<Btop){
+              if(e9<1){classforTitle.eq(e9+1).css('font-weight','900'); classforTitle.eq(e9+1).siblings('.classforTitle').css('font-weight','300');}
+              else if(e9>=1&&e9<8){classforTitle.eq(e9).css('font-weight','900'); classforTitle.eq(e9).siblings('.classforTitle').css('font-weight','300');}
+              else if(e9>=8&&e9<15){classforTitle.eq(e9-1).css('font-weight','900'); classforTitle.eq(e9-1).siblings('.classforTitle').css('font-weight','300');}
+              else if(e9>=15){classforTitle.eq(e9-2).css('font-weight','900'); classforTitle.eq(e9-2).siblings('.classforTitle').css('font-weight','300');}
+            }
           }
         }
 
