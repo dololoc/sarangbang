@@ -107,7 +107,7 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
   .talk-left br, .talk-right br{display: none;}
   .character{height: 100vh;}
   .character h1{font-size: 1.4rem; line-height: 2rem; left: 4vw; width: 92vw;}
-  ul.title li h1{left: 4vw; font-size: 1.4rem; line-height: 8vh;}
+  ul.title li h1{left: 4vw; font-size: 1.4rem; line-height: 8vh; font-weight: 900;}
   ul.title li h1 br{display: block;}
   .b-wrapper{height:1188vw;} .r-wrapper{height:972vw;} .s-wrapper{height: 1380vw; top: -20vw;}
   ol.bottom-list{display: none;}
