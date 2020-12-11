@@ -16,7 +16,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 #intro-vimeo, #outro-vimeo{position:absolute;top:0vh;left:0vw;width:100vw;height:100vh;}
 .vid-exp{position: relative top: 4vh; width: 16vw; color: #ffffff;}
 
-.domain{position:relative; width: 100%; height: 100vh; z-index: 0; overflow-y:hidden; background-color: #ffffff;}
+.domain{position:relative; width: 100%; height: 100vh; z-index: 0; overflow-y:hidden;}
 .domain h1{font-size: 2.6vw; line-height: 4vw;}
 #first-text{margin-top: 24px; margin-bottom:4px; font-size: 1.8rem;}
 .domain-text{position: relative; top:12vh; left:12vw; width: 76vw; height: 76vh; color: #ff6200;}
@@ -25,9 +25,9 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 .domain-text-left{position:absolute; left: 12vw; top: 16vh; width: 28vw; height: 76vh;}
 
 .talk-left{position: absolute; left: 0; margin-left: 40px; top: 24vh; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
-                width: 21rem; height: 4rem; padding: 1.2rem; background-color: #f7f9fc; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;}
+                width: 21rem; padding: 1.2rem; background-color: #f7f9fc; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;}
 .talk-right{position: absolute; right: 0; top: 28vh; margin-top: 6.4rem;
-            width: 16rem; height: 4rem; padding: 1.2rem;
+            width: 16rem; padding: 1.2rem;
             font-size: 1rem; line-height: 2rem; font-weight: 500;
             letter-spacing: -0.8px; text-align: justify; background-color: #f0f8ff;
             color: #27304d; border-radius: 2rem; border-top-right-radius: 0;}
@@ -50,6 +50,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 ul.title{list-style-type: none; width: 100%; margin: 0; padding: 0;}
 ul.title li{position: relative; width: 100%;}
 ul.title li h1{position: relative; left: 12vw; line-height: 16vh; font-weight: 300;}
+ul.title li h1 br{display:none;}
 
 ol.bottom-list{position: absolute; right: 0; color: red; z-index:-12; height: 420vh;}
 ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
@@ -60,16 +61,13 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .b-wrapper{background-color: #27304d; color: #ffffff;} .r-wrapper{height: 420vh;background-color: #ff6200; color: #ffffff; z-index: 5;} .s-wrapper{height: 440vh;background-color: #ffffff; z-index:8;}
 .content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; display: none;}
 .s-solid{height: 440vh;}
-/* .chapter{width: 100%; height: 4vh;} */
-
-/* .chapter-bar{position:relative; left:4px; top: 0vh; width:0; height:1vh;background-color:#ffffff;} */
 
 .content-area{position: absolute; top:4vh; left: 12vw; width: 76vw;}
 .s-wrapper .content-area{margin-top: 24vh;}
 .content-b{position: relative; padding-bottom: 4.6vh;}
 .content-r{position: relative; padding-bottom: 4.6vh;}
 .content-s{position: relative; padding-bottom: 4.6vh; z-index: 5;}
-.content-solid h1{font-size: 1.2rem; line-height: 2.4rem; margin-bottom: 4.8rem;}  .content-solid p{width:34vw;}
+.content-solid h1{font-size: 1.12rem; line-height: 2.4rem; margin-bottom: 4.8rem;}  .content-solid p{width:34vw;}
 .content-s h1{position: relative; left: 41vw; width: 35vw; margin-top: 4vh;}
 .content-s p{position: relative; left: 41vw; width: 35vw; margin-top: 2.4rem;}
 .text-title{font-weight:700;}
@@ -94,12 +92,6 @@ ul.reference-list li{position: relative; font-size: 2vh; line-height: 3.7vh; fon
 .amember{left: 12vw;} .bmember{left: 38vw;} .cmember{left: 64vw;}
 .p-img{ position: relative; margin: 0 auto; margin-top: 0vh; width: 24vw; height: 24vw; border-radius: 4px; background-color: #f7f9fc;}
 
-#thanksto{position:relative; width:100%; height: 80vh; margin: 0 auto; z-index: 0; background-color: #ffffff;}
-#thanksto h1{position:absolute; left: 12vw; top: 0;}
-ul.thanks-name{position:absolute; margin:0; padding:0; left: 12vw; top: 5.2vw;}
-ul.thanks-name li{list-style-type: none; margin:0; padding:0; line-height: 3rem;}
-ul.thanks-name li p{font-weight: 700;}
-
 footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; padding:0}
 
 @media (max-width: 720px){
@@ -109,16 +101,18 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
   .vid-exp{position: absolute; top: 60vh; left: 4vw; width: 92%;}
   .vid-exp h1{margin-bottom: 1rem;}
   h1{font-size:1rem;} p{font-size: 0.9rem; line-height: 1.8rem;}
-  .domain h1{font-size:1.2rem;} #first-text{font-size:1.2rem;}
-  .domain-text{left: 4vw; top: 4vh; width: 92%;}
-  .character h1{font-size: 1.4rem; left: 4vw; width: 92vw;}
-  ul.title li{height: 8vh;} ul.title li h1{left: 4vw; font-size: 1.4rem; line-height: 8vh;}
-  .content-wrapper{display: block;}
+  .domain h1{font-size:1.4rem; line-height:2rem;} #first-text{font-size:1.2rem;margin-top: 16vh;}
+  .domain-text{left: 4vw; top: 4vh; width: 92%;} .domain-img{display: none;}
+  .talk-left, .talk-right{width: 16rem;} .talk-right{margin-top: 7.4rem;}
+  .talk-left br, .talk-right br{display: none;}
+  .character{height: 100vh;}
+  .character h1{font-size: 1.4rem; line-height: 2rem; left: 4vw; width: 92vw;}
+  ul.title li h1{left: 4vw; font-size: 1.4rem; line-height: 8vh;}
+  ul.title li h1 br{display: block;}
   .b-wrapper{height:1188vw;} .r-wrapper{height:972vw;} .s-wrapper{height: 1380vw; top: -20vw;}
   ol.bottom-list{display: none;}
   .content-solid{display: block; height: 216vw;}
   .short-solid{height: 108vw;}
-  .chapter{display: none;}
   .content-area{position:relative; margin-top: 0vh; left: 4vw; width: 92%;}
   .motion{position: relative; left: 2vw; width: 92%; top: 8vw;}
   .motion-left{left: 0vw;}
