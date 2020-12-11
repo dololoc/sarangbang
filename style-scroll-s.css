@@ -1,6 +1,6 @@
 body{background-color:#ffffff; color:#27304d; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 2vh; font-weight: 400; position:relative; margin:0 auto;}
 h1{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 2.4vw; font-weight: 700; letter-spacing: -0.2px;}
-p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 1.2rem; line-height: 2.6rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
+p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', sans-serif; font-size: 1.12rem; line-height: 2.4rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;}
 .eng{font-family:'Roboto',sans-serif; font-weight:400; letter-spacing: -0.2px;}
 
 .scroll-top{position: fixed; top:0px; right: 0; color: yellow; z-index:-12;}
@@ -9,7 +9,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 .scroller-bottom{position: fixed; top: 90vh; right: 0; color: yellow; z-index:-12;}
 .ui-anchor{position: fixed; top: 24vh; right: 0; color: yellow; z-index:-12;}
 
-.top{position: absolute; top:0; right: 0; color: red; z-index:-12;}
+.top{position: absolute; top:0; right: 0; color: red; z-index:20;}
 /* .bottom{position:absolute; right: 0; color: red; z-index:-12;} */
 
 #introvid,#outrovid{background-color:#000000; position: relative; width: 100%; height: 100vh; overflow-y:hidden;}
@@ -66,12 +66,12 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 
 
 .content-wrapper{position:relative; width:100%; height: 504vh; margin:0;}
-.b-wrapper{background-color: #27304d; color: #ffffff;} .r-wrapper{height: 420vh;background-color: #ff6200; color: #ffffff; z-index: 5;} .s-wrapper{height: 440vh;background-color: #ffffff; z-index:8;}
+.b-wrapper{background-color: #27304d; color: #ffffff;} .r-wrapper{height: 420vh;background-color: #ff6200; color: #ffffff; z-index: 5;} .s-wrapper{height: 252vh;background-color: #ffffff; z-index:8;}
 .content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; display: none;}
 .s-solid{height: 440vh;}
 
 .content-area{position: absolute; top:4vh; left: 12vw; width: 76vw;}
-.s-wrapper .content-area{margin-top: 24vh;}
+/* .s-wrapper .content-area{margin-top: 24vh;} */
 .content-b{position: relative; padding-bottom: 4.6vh;}
 .content-r{position: relative; padding-bottom: 4.6vh;}
 .content-s{position: relative; padding-bottom: 4.6vh; z-index: 5;}
@@ -80,13 +80,26 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .content-s p{position: relative; left: 41vw; width: 35vw; margin-top: 2.4rem;}
 .text-title{font-weight:700;}
 
-.motion{position: absolute; left: 53vw; top: 10vh; width: 35vw;}
-.ui{position: sticky; left: 12vw; top: 16vh; width: 35vw; z-index: 4;}
-.ui-name{position: absolute; top: 28vw; display: none; font-weight: 700;}
+.motion{position: absolute; left: 53vw; top: 4vh; margin-top: 9.6rem; width: 35vw;}
+/* .ui{position: sticky; left: 12vw; top: 16vh; width: 35vw; z-index: 4;}
+.ui-name{position: absolute; top: 28vw; display: none; font-weight: 700;} */
 
 .full-motion{position:absolute; width: 48vw; height:80vh; left: 14vw;}
-.motion-s{position: fixed; left: 8.9vw; top: 14.8vh; width: 40vw; display: none;}
-.motion-s-left{left: 8.4vw;}
+/* .motion-s{position: fixed; left: 8.9vw; top: 14.8vh; width: 40vw; display: none;}
+.motion-s-left{left: 8.4vw;} */
+
+.ui-area{position: absolute; top: 4vh; left: 12vw; width: 38vw;}
+.ui{position: absolute; top:0; left:0; width:100%; z-index: 4;}
+.basic-s{position: absolute; top: 0; left: 0; width:100%; z-index: 1;}
+.hover-s{position: absolute; top: 0; left: 0; width:100%; z-index: 2; display: none;}
+
+.exp-area{position: absolute; top: 4vh; left: 57vw; width: 31vw;}
+.exp{position: relative; margin-bottom: 4vw; width: 100%;}
+.exp-short{margin-bottom: 1.2vw;}
+.exp h1{font-size: 2rem; line-height: 3rem; margin: 0; font-weight: 700; color: #ff6200;}
+.exp-summary{font-size: 1.12rem; line-height: 2.4rem; font-weight: 700; color: #565656; margin-bottom: 1.12rem;}
+.exp p{color: #565656;}
+
 
 #reference-title{position: relative; width: 100%; z-index: 0; height: 12vh; background-color: #f7f9fc;}
 #reference-title h1{position: relative; left: 12vw; line-height: 12vh;}
