@@ -110,9 +110,16 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
   .vid-exp h1{margin-bottom: 1rem;}
   h1{font-size:1rem;} p{font-size: 0.9rem; line-height: 1.8rem;}
   .domain h1{font-size:1.4rem; line-height:2rem;}
-  .domain-text{left: 4vw; top: 4vh; width: 92%;} .domain-img{display: none;}
+  .domain-text{left: 4vw; top: 8vh; width: 92%;} .domain-img{display: none;}
   .talk-left, .talk-right{width: 16rem;} .talk-right{margin-top: 7.4rem;}
   .talk-left br, .talk-right br{display: none;}
+
+  .r-cha-left{width: 80px; padding-top: 20px;}
+  .r-cha-right{width: 80px; right: -6vw; padding-top: 20px;}
+  .r-talk-left{width: 16rem; margin-left: 60px; font-size: 0.9rem; line-height: 1.8rem; padding: 0.9rem;}
+  .r-talk-right{width: 16rem; margin-right: 60px; font-size: 0.9rem; line-height: 1.8rem; padding: 0.9rem;}
+  .r-talk-left br, .r-talk-right br{display: none;}
+
   .character{height: 100vh;}
   .character h1{font-size: 1.4rem; line-height: 2rem; left: 4vw; width: 92vw;}
   ul.title li h1{left: 4vw; font-size: 1.4rem; line-height: 8vh;}
