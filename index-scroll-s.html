@@ -458,7 +458,7 @@
           var classTop = classforTop.eq(e1); var Top = classTop.offset().top;
           if(Ttop<Top && Top<Btop){
             if(f1[e1]==1){
-              $('html,body').animate({scrollTop: Top},800,function(){showContent(e1);}).delay(200);
+              $('html,body').animate({scrollTop: Top},800,function(){showContent(e1);}).delay(160);
               f1[e1]=0;
             }
           }
@@ -478,7 +478,7 @@
           var classbottom = classforBottom.eq(e3); var Bottom = classbottom.offset().top;
           if(Ttop<Bottom && Bottom<Btop){
             if(f2[e3]==1){
-              $('html,body').animate({scrollTop: Bottom-titleHeight},800).delay(400);
+              $('html,body').animate({scrollTop: Bottom-titleHeight},800).delay(200);
               console.log(e3);
               f2[e3]=0;
             }
