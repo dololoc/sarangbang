@@ -17,8 +17,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 .vid-exp{position: relative top: 4vh; width: 16vw; color: #ffffff;}
 
 .domain{position:relative; width: 100%; height: 100vh; z-index: 0; overflow-y:hidden; background-color: #ffffff;}
-.domain h1{font-size: 2.6vw; line-height: 4vw;}
-#first-text{margin-top: 24px; margin-bottom:4px; font-size: 1.8rem;}
+.domain h1{font-size: 2.4rem; line-height: 3.6rem;}
 .domain-text{position: relative; top:12vh; left:12vw; width: 76vw; height: 76vh; color: #ff6200;}
 
 .domain-text-right{position:absolute; left: 60vw; top: 16vh; width: 28vw; height: 76vh;}
@@ -32,6 +31,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
             letter-spacing: -0.8px; text-align: justify; background-color: #f0f8ff;
             color: #27304d; border-radius: 2rem; border-top-right-radius: 0;}
 .message-user{position:absolute;top: 24vh; width: 32px; height: 32px; background-color: #f7f9fc; border-radius: 12px;}
+.k-message-user{position:absolute;top: 24vh; width: 32px; height: 32px;}
 
 .k-talk-left{position: absolute; left: 0; margin-left: 40px; top: 20vh; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
                 width: 14rem; height: 2rem; padding: 1.2rem; background-color: #ffffff; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;
@@ -41,8 +41,16 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
                 box-shadow: 2px 2px 6px 6px #f7f9fc;}
 .podcast::before{content: '\f2ce'; font-family: fontello; margin-right: 1rem; color: #ff6200;}
 
+.r-cha-left{position: absolute; left: 0; top: 16vh;}
+.r-cha-right{position: absolute; right: 0; top: 20vh; margin-top: 6.4rem;}
+
+.r-talk-left{position: absolute; left: 0; margin-left: 160px; top: 20vh; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
+              width: 27rem; padding: 1.2rem; padding-left: 2.2rem; background-color: #ffffff; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;}
+.r-talk-right{position: absolute; right: 0; margin-right: 200px; top: 24vh; margin-top: 6.4rem; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
+              width: 27rem; padding: 1.2rem; padding-left: 2.2rem; background-color: #ffffff; color: #27304d; border-radius: 2rem; border-top-right-radius: 0;}
+
 .character{position:sticky; top:0; left: 0; width: 100%; height: 200vh; z-index: 0;}
-.character h1{position: absolute; top: 12vh; left: 64vw; z-index: 2; font-size: 2.6vw; line-height: 4vw;}
+.character h1{position: absolute; top: 12vh; left: 64vw; z-index: 2; font-size: 2.4rem; line-height: 3.6rem;}
 .first{position: absolute; top:0; left: 0; width:100vw; height: 100vh; overflow-y:hidden; z-index:1;}
 .second{position: absolute; top:0; left: 0; width:100vw; height: 100vh; overflow-y:hidden; z-index:0;}
 
@@ -101,13 +109,13 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
   .vid-exp{position: absolute; top: 60vh; left: 4vw; width: 92%;}
   .vid-exp h1{margin-bottom: 1rem;}
   h1{font-size:1rem;} p{font-size: 0.9rem; line-height: 1.8rem;}
-  .domain h1{font-size:1.4rem; line-height:2rem;} #first-text{font-size:1.2rem;margin-top: 16vh;}
+  .domain h1{font-size:1.4rem; line-height:2rem;}
   .domain-text{left: 4vw; top: 4vh; width: 92%;} .domain-img{display: none;}
   .talk-left, .talk-right{width: 16rem;} .talk-right{margin-top: 7.4rem;}
   .talk-left br, .talk-right br{display: none;}
   .character{height: 100vh;}
   .character h1{font-size: 1.4rem; line-height: 2rem; left: 4vw; width: 92vw;}
-  ul.title li h1{left: 4vw; font-size: 1.4rem; line-height: 8vh; font-weight: 900;}
+  ul.title li h1{left: 4vw; font-size: 1.4rem; line-height: 8vh;}
   ul.title li h1 br{display: block;}
   .b-wrapper{height:1188vw;} .r-wrapper{height:972vw;} .s-wrapper{height: 1380vw; top: -20vw;}
   ol.bottom-list{display: none;}
