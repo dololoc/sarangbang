@@ -9,7 +9,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 .scroller-bottom{position: fixed; top: 90vh; right: 0; color: yellow; z-index:-12;}
 .ui-anchor{position: fixed; top: 24vh; right: 0; color: yellow; z-index:-12;}
 
-.top{position: absolute; top:0; right: 0; color: red; z-index:-12;}
+.top{position: absolute; top:0; right: 0; color: red; z-index:20;}
 /* .bottom{position:absolute; right: 0; color: red; z-index:-12;} */
 
 #introvid,#outrovid{background-color:#000000; position: relative; width: 100%; height: 100vh; overflow-y:hidden;}
@@ -19,11 +19,12 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 .domain{position:relative; width: 100%; height: 100vh; z-index: 0; overflow-y:hidden; background-color: #ffffff;}
 .domain h1{font-size: 2.4rem; line-height: 3.6rem;}
 .domain-text{position: relative; top:12vh; left:12vw; width: 76vw; height: 76vh; color: #ff6200;}
+.domain-img{position: absolute; top: 8vh; right: 12vw; width: 76vw; height: 92vh;}
 
 .domain-text-right{position:absolute; left: 60vw; top: 16vh; width: 28vw; height: 76vh;}
-.domain-text-left{position:absolute; left: 12vw; top: 16vh; width: 28vw; height: 76vh;}
+.domain-text-left{position:absolute; left: 12vw; top: 40vh; width: 40vw; height: 60vh;}
 
-.talk-left{position: absolute; left: 0; margin-left: 40px; top: 24vh; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
+/* .talk-left{position: absolute; left: 0; margin-left: 40px; top: 24vh; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
                 width: 21rem; padding: 1.2rem; background-color: #f7f9fc; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;}
 .talk-right{position: absolute; right: 0; top: 28vh; margin-top: 6.4rem;
             width: 16rem; padding: 1.2rem;
@@ -39,7 +40,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
 .k-talk-right{position: absolute; right: 0; top: 22vh; margin-top: 4.4rem; width: 12rem; height: 2rem; padding: 1.2rem; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
                 background-color: #ffdb45; color: #27304d; border-radius: 2rem; border-top-right-radius: 0;
                 box-shadow: 2px 2px 6px 6px #f7f9fc;}
-.podcast::before{content: '\f2ce'; font-family: fontello; margin-right: 1rem; color: #ff6200;}
+.podcast::before{content: '\f2ce'; font-family: fontello; margin-right: 1rem; color: #ff6200;} */
 
 .r-cha-left{position: absolute; left: 0; top: 16vh;}
 .r-cha-right{position: absolute; right: 0; top: 20vh; margin-top: 6.4rem;}
@@ -50,7 +51,7 @@ p{margin: 0; font-family: 'Noto Sans KR', sans-serif; font-family: 'Roboto', san
               width: 27rem; padding: 1.2rem; padding-left: 2.2rem; background-color: #ffffff; color: #27304d; border-radius: 2rem; border-top-right-radius: 0;}
 
 .character{position:sticky; top:0; left: 0; width: 100%; height: 200vh; z-index: 0;}
-.character h1{position: absolute; top: 12vh; left: 64vw; z-index: 2; font-size: 2.4rem; line-height: 3.6rem;}
+.character h1{position: absolute; top: 32vh; left: 64vw; z-index: 2; font-size: 2.4rem; line-height: 3.6rem;}
 .first{position: absolute; top:0; left: 0; width:100vw; height: 100vh; overflow-y:hidden; z-index:1;}
 .second{position: absolute; top:0; left: 0; width:100vw; height: 100vh; overflow-y:hidden; z-index:0;}
 
@@ -64,9 +65,8 @@ ol.bottom-list{position: absolute; right: 0; color: red; z-index:-12; height: 42
 ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .bottom-list{z-index:-12;}
 
-
-.content-wrapper{position:relative; width:100%; height: 504vh; margin:0;}
-.b-wrapper{background-color: #27304d; color: #ffffff;} .r-wrapper{height: 420vh;background-color: #ff6200; color: #ffffff; z-index: 5;} .s-wrapper{height: 252vh;background-color: #ffffff; z-index:8;}
+.content-wrapper{position:relative; width:100%; height: 420vh; margin:0;}
+.b-wrapper{background-color: #27304d; color: #ffffff;} .r-wrapper{background-color: #ff6200; color: #ffffff; z-index: 5;} .s-wrapper{height: 252vh;background-color: #ffffff; z-index:8;}
 .content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; display: none;}
 .s-solid{height: 440vh;}
 
@@ -80,13 +80,23 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .content-s p{position: relative; left: 41vw; width: 35vw; margin-top: 2.4rem;}
 .text-title{font-weight:700;}
 
+.h1-area{position: absolute; top: 0; left: 0; z-index: 2; width: 15rem; height: 2.4rem;}
+.h1-animation{position: relative; top: 0; left: 0; margin-top:4px; margin-left:-4px; background-color: #ff6200;
+              width:8%; height: 1.6rem; padding: 4px; border-radius: 2.4rem;
+              animation: h1-highlight 1.6s forwards;}
+@keyframes h1-highlight {
+              0%{width: 0; left: 0; opacity: 0;}
+              40%{width: 0; left: 0; padding: 0; opacity: 0;}
+              48%{width: 8%; left: 0; padding: 4px; opacity: 1;}
+              72%{width: 72%; left: 0; padding: 4px;}
+              84%{width: 72%; left: 28%; padding: 4px;}
+              96%{width: 8%; left: 92%; opacity: 1;}
+              100%{width: 0; left: 98%; padding: 0; opacity: 0;}
+}
+
 .motion{position: absolute; left: 53vw; top: 4vh; margin-top: 9.6rem; width: 35vw;}
-/* .ui{position: sticky; left: 12vw; top: 16vh; width: 35vw; z-index: 4;}
-.ui-name{position: absolute; top: 28vw; display: none; font-weight: 700;} */
 
 .full-motion{position:absolute; width: 48vw; height:80vh; left: 14vw;}
-/* .motion-s{position: fixed; left: 8.9vw; top: 14.8vh; width: 40vw; display: none;}
-.motion-s-left{left: 8.4vw;} */
 
 .ui-area{position: absolute; top: 4vh; left: 12vw; width: 38vw;}
 .ui{position: absolute; top:0; left:0; width:100%; z-index: 4;}
@@ -97,9 +107,9 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .exp{position: relative; margin-bottom: 4vw; width: 100%;}
 .exp-short{margin-bottom: 1.2vw;}
 .exp h1{font-size: 2rem; line-height: 3rem; margin: 0; font-weight: 700; color: #ff6200;}
+.exp-pointer{font-family: 'fontello'; font-size: 1.6rem; color: #ff6200; position:relative; margin-left: 1rem; margin-top: -3rem;}
 .exp-summary{font-size: 1.12rem; line-height: 2.4rem; font-weight: 700; color: #565656; margin-bottom: 1.12rem;}
 .exp p{color: #565656;}
-
 
 #reference-title{position: relative; width: 100%; z-index: 0; height: 12vh; background-color: #f7f9fc;}
 #reference-title h1{position: relative; left: 12vw; line-height: 12vh;}
