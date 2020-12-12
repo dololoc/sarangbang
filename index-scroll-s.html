@@ -380,7 +380,6 @@
         var titleHeight = $(window).height()*16/100;
         var classforTop = $('.top');
         var classforBottom = $('.bottom');
-        var classforS = $('.content-s');
         var classforSmotion = $('.motion-s');
         var classforWrapper = $('.content-wrapper');
         var classforUiname = $('.ui-name');
@@ -390,6 +389,7 @@
         var classforTitle = $('.classforTitle');
         var classforhovervideo = $('.hover-s');
         var classforexp = $('.exp');
+        var classforsolid = $('.content-solid');
 
         function noAnchor(){
           if(windowwidth<= 720){
@@ -427,7 +427,7 @@
           if(Ttop<Bottom && Bottom<Btop){
             if(f2[e3]==1){
               $('html,body').animate({scrollTop: Bottom-titleHeight},800).delay(200);
-              var thiscontent = $('.content-solid').eq(e3+1); $(thiscontent).show();
+              var thiscontent = classforsolid.eq(e3+1); $(thiscontent).show();
               console.log(e3);
               f2[e3]=0;
             }
