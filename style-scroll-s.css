@@ -24,24 +24,6 @@ p{margin: 0; font-family: 'Roboto', 'Noto Sans KR', sans-serif; font-size: 1rem;
 .domain-text-right{position:absolute; left: 60vw; top: 16vh; width: 28vw; height: 76vh;}
 .domain-text-left{position:absolute; left: 12vw; top: 40vh; width: 40vw; height: 60vh;}
 
-/* .talk-left{position: absolute; left: 0; margin-left: 40px; top: 24vh; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
-                width: 21rem; padding: 1.2rem; background-color: #f7f9fc; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;}
-.talk-right{position: absolute; right: 0; top: 28vh; margin-top: 6.4rem;
-            width: 16rem; padding: 1.2rem;
-            font-size: 1rem; line-height: 2rem; font-weight: 500;
-            letter-spacing: -0.8px; text-align: justify; background-color: #f0f8ff;
-            color: #27304d; border-radius: 2rem; border-top-right-radius: 0;}
-.message-user{position:absolute;top: 24vh; width: 32px; height: 32px; background-color: #f7f9fc; border-radius: 12px;}
-.k-message-user{position:absolute;top: 24vh; width: 32px; height: 32px;}
-
-.k-talk-left{position: absolute; left: 0; margin-left: 40px; top: 20vh; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
-                width: 14rem; height: 2rem; padding: 1.2rem; background-color: #ffffff; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;
-                box-shadow: 2px 2px 6px 6px #f7f9fc;}
-.k-talk-right{position: absolute; right: 0; top: 22vh; margin-top: 4.4rem; width: 12rem; height: 2rem; padding: 1.2rem; font-size: 1rem; line-height: 2rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
-                background-color: #ffdb45; color: #27304d; border-radius: 2rem; border-top-right-radius: 0;
-                box-shadow: 2px 2px 6px 6px #f7f9fc;}
-.podcast::before{content: '\f2ce'; font-family: fontello; margin-right: 1rem; color: #ff6200;} */
-
 .r-cha-left{position: absolute; left: 0; top: 16vh;}
 .r-cha-right{position: absolute; right: 0; top: 18.4vh; margin-top: 6rem;}
 
@@ -71,13 +53,7 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .s-solid{height: 440vh;}
 
 .content-area{position: absolute; top:4vh; left: 12vw; width: 76vw;}
-/* .s-wrapper .content-area{margin-top: 24vh;} */
-/* .content-b{position: relative; padding-bottom: 4.6vh;}
-.content-r{position: relative; padding-bottom: 4.6vh;} */
-/* .content-s{position: relative; padding-bottom: 4.6vh; z-index: 5;} */
 .content-solid h1{font-size: 1rem; line-height: 2.2rem; margin-bottom: 4.4rem;}  .content-solid p{width:34vw;}
-/* .content-s h1{position: relative; left: 41vw; width: 35vw; margin-top: 4vh;}
-.content-s p{position: relative; left: 41vw; width: 35vw; margin-top: 2.4rem;} */
 .text-title{font-weight:700;}
 
 .h1-area{position: absolute; top: 0; left: 0; z-index: 1; width: 10.8rem; height: 2.4rem;}
@@ -123,7 +99,7 @@ ul.reference-list li{position: relative; font-size: 2vh; line-height: 3.7vh; fon
 footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; padding:0}
 
 @media (max-width: 720px){
-  .ui-anchor{display:none;}
+  .ui-anchor, .top, .bottom, .scroll-top, .content-top, .scroller-top, .scroller-bottom{display:none;}
   body{width: auto; touch-action: pan-y;}
   #intro-vimeo, #outro-vimeo{position:absolute;top:-24vw;}
   .vid-exp{position: absolute; top: 60vh; left: 4vw; width: 92%;}
@@ -132,8 +108,6 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
   .domain h1{font-size:1.4rem; line-height:2rem;}
   .domain-text{left: 4vw; top: 8vh; width: 92%;} .domain-text-left{left: 4vw; top: 16vh; width: 92%;}
   .domain-img{position: absolute; top: 36vh; left: 4vw; width: 92vw; height: 64vh;}
-  /* .talk-left, .talk-right{width: 16rem;} .talk-right{margin-top: 7.4rem;}
-  .talk-left br, .talk-right br{display: none;} */
 
   .r-chat{position:absolute; top: -8vh; left: 0; width:92vw; height: 100%;}
   .r-cha-left{width: 80px; padding-top: 20px;}
