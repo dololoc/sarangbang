@@ -124,7 +124,7 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
 
 @media (max-width: 720px){
   .ui-anchor{display:none;}
-  body{width: auto;}
+  body{width: auto; touch-action: pan-y;}
   #intro-vimeo, #outro-vimeo{position:absolute;top:-24vw;}
   .vid-exp{position: absolute; top: 60vh; left: 4vw; width: 92%;}
   .vid-exp h1{margin-bottom: 1rem;}
