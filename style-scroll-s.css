@@ -36,6 +36,7 @@ p{margin: 0; font-family: 'Roboto', 'Noto Sans KR', sans-serif; font-size: 1rem;
 .character h1{position: absolute; top: 32vh; left: 64vw; z-index: 2; font-size: 2rem; line-height: 3.2rem;}
 .first{position: absolute; top:0; left: 0; width:100vw; height: 100vh; overflow-y:hidden; z-index:1;}
 .second{position: absolute; top:0; left: 0; width:100vw; height: 100vh; overflow-y:hidden; z-index:0;}
+.mobile-h1, .mobile-h2{display: none;}
 
 #contents{position: relative; width: 100%; z-index: 0;}
 ul.title{list-style-type: none; width: 100%; margin: 0; padding: 0;}
@@ -50,7 +51,6 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .content-wrapper{position:relative; width:100%; height: 420vh; margin:0;}
 .b-wrapper{background-color: #27304d; color: #ffffff;} .r-wrapper{background-color: #ff6200; color: #ffffff; z-index: 5;} .s-wrapper{height: 252vh;background-color: #ffffff; z-index:8;}
 .content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; display: none;}
-.s-solid{height: 440vh;}
 
 .content-area{position: absolute; top:4vh; left: 12vw; width: 76vw;}
 .content-solid h1{font-size: 1rem; line-height: 2.2rem; margin-bottom: 4.4rem;}  .content-solid p{width:34vw;}
@@ -99,8 +99,8 @@ ul.reference-list li{position: relative; font-size: 2vh; line-height: 3.7vh; fon
 footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; padding:0}
 
 @media (max-width: 720px){
-  .ui-anchor, .top, .bottom, .scroll-top, .content-top, .scroller-top, .scroller-bottom{display:none;}
-  body{width: auto; touch-action: pan-y;}
+  .scroll-top, .content-top, .scroller-top, .scroller-bottom, .ui-anchor, .top, .bottom{display:none;}
+  body{width: auto;}
   #intro-vimeo, #outro-vimeo{position:absolute;top:-24vw;}
   .vid-exp{position: absolute; top: 60vh; left: 4vw; width: 92%;}
   .vid-exp h1{margin-bottom: 1rem;}
@@ -108,16 +108,22 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
   .domain h1{font-size:1.4rem; line-height:2rem;}
   .domain-text{left: 4vw; top: 8vh; width: 92%;} .domain-text-left{left: 4vw; top: 16vh; width: 92%;}
   .domain-img{position: absolute; top: 36vh; left: 4vw; width: 92vw; height: 64vh;}
+  .domain-h1{margin-top: -8vh;}
+  .domain-h2{margin-top: 4vh;}
 
   .r-chat{position:absolute; top: -8vh; left: 0; width:92vw; height: 100%;}
-  .r-cha-left{width: 80px; padding-top: 20px;}
-  .r-cha-right{width: 80px; right: -8vw; padding-top: 20px;}
-  .r-talk-left{width: 15.2rem; margin-left: 60px; font-size: 0.9rem; line-height: 1.8rem; padding: 0.9rem;}
-  .r-talk-right{width: 15.2rem; margin-right: 60px; font-size: 0.9rem; line-height: 1.8rem; padding: 0.9rem;}
+  .r-cha-left{width: 80px; padding-top: 28px;}
+  .r-cha-right{width: 80px; right: -8vw; padding-top: 32px;}
+  .r-talk-left{width: 15.2rem; margin-left: 60px; font-size: 0.8rem; line-height: 1.6rem; padding: 0.8rem;}
+  .r-talk-right{width: 15.2rem; margin-right: 60px; font-size: 0.8rem; line-height: 1.6rem; padding: 0.8rem;}
   .r-talk-left br, .r-talk-right br{display: none;}
 
-  .character{height: 100vh;}
-  .character h1{font-size: 1.4rem; line-height: 2rem; left: 4vw; width: 92vw;}
+  .character{height: 100vh; width: 100%;}
+  .character h1{font-size: 1.4rem; line-height: 2rem; width: 92vw; top: 0; left: 4vw;}
+  .first, .second{display: none;}
+  .mobile-h1{display: block; position:absolute; margin-top: 4vh; right: 0; text-align: right;}
+  .mobile-h2{display: block; position:absolute; margin-top: 54vh; right: 0; text-align: right;}
+
   ul.title li h1{left: 4vw; font-size: 1.4rem; line-height: 8vh;}
   ul.title li h1 br{display: block;}
   .b-wrapper{height:972vw;} .r-wrapper{height:972vw;} .s-wrapper{height: 720vw;}
@@ -138,7 +144,6 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
   ul.reference-list{left: 4vw; width: 92vw;}
   #profile{height: 168vw; padding-top: 8vw;}
   .p-img{margin-top: 0;}
-  .logo{width: 52vw;}
   .prof-logo{left: 4vw; width: 52vw;}
   .member{top:76vw; left: 4vw; width: 92vw;} .p-img{margin-left: 0;}
   .member p{position:absolute; margin-left: 28vw; margin-top: -14vw;}

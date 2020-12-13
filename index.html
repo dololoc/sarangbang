@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
   <meta property="og:image" content="img/PC Main.png" />
   <link rel="shortcut icon" href="img/pavicon.ico">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,13 +12,6 @@
   <link rel="stylesheet" href="css/fontello.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>우리동네 사랑방</title>
-  <script>
-document.documentElement.addEventListener('touchstart', function (event) {
-if (event.touches.length > 1) {
-event.preventDefault();
-}
-}, false);
-  </script>
 </head>
 <body style="overflow-x:hidden;">
   <div class="scroll-top">-scroll-top-</div>
@@ -53,17 +46,19 @@ event.preventDefault();
   </div>
   <div class="domain">
     <div class="domain-text domain-text-left">
-      <h1>우리는 화상회의 서비스로<br>집에서 수업을 듣고</h1>
-      <h1 data-aos="flip-right" data-aos-delay="1000" style="position: absolute; top:-4px; left: -4px; width: 28.8rem; background-color: #ffffff;  padding: 4px;">우리는 메신저로<br>실시간 대화합니다</h1>
+      <h1 class="domain-h1">우리는 화상회의 서비스로<br>집에서 수업을 듣고</h1>
+      <h1 class="domain-h2" data-aos="flip-right" data-aos-delay="1000" style="position: absolute; top:-4px; left: -4px; width: 28.8rem; background-color: #ffffff;  padding: 4px;">우리는 메신저로<br>실시간 대화합니다</h1>
     </div>
     <div class="domain-img">
       <video src="vid/k-talk.mp4" autoplay muted height=84% style="position:absolute; top:0; right: 0; z-index: -1;"></video>
     </div>
   </div>
 
-  <div class="character">
-    <div class="first" style="background-image: url('img/character-1.svg'); background-repeat: no-repeat; background-size: cover; background-position: center bottom; background-attachment: fixed;"><h1 style="color:#ff6200;">우리가<br>그렇게 일상을 보낼 때</h1></div>
-    <div class="second" style="background-image: url('img/character-2.svg'); background-repeat: no-repeat; background-size: cover; background-position: center bottom; background-attachment: fixed;"><h1 style="color:#ffffff;">모두가<br>그런 것은 아닙니다</h1></div>
+  <div class="character" style="background-image: url('img/cha-mobile-1.svg'); background-repeat: no-repeat; background-size: cover; background-position: left bottom; background-attachment: scroll;">
+    <h1 class="mobile-h1" style="color:#ff6200;">우리가<br>그렇게 일상을 보낼 때</h1>
+    <h1 class="mobile-h2" style="color:#ffffff;">모두가<br>그런 것은 아닙니다</h1>
+    <div class="first" style="background-image: url('img/cha-1.svg'); background-repeat: no-repeat; background-size: cover; background-position: center bottom; background-attachment: fixed;"><h1 style="color:#ff6200;">우리가<br>그렇게 일상을 보낼 때</h1></div>
+    <div class="second" style="background-image: url('img/cha-2.svg'); background-repeat: no-repeat; background-size: cover; background-position: center bottom; background-attachment: fixed;"><h1 style="color:#ffffff;">모두가<br>그런 것은 아닙니다</h1></div>
   </div>
   <div class="domain" style="background-image:url('img/intro-mask8.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center bottom; opacity: 1;">
     <div class="domain-text-left">
@@ -132,7 +127,7 @@ event.preventDefault();
       </div>
       <div class="content-solid">
         <div class="content-area">
-          <div class="h1-area" style="width: 5.0rem;">
+          <div class="h1-area" style="width: 4.8rem;">
             <div data-aos="fade-in" class="h1-animation"></div>
             <h1 style="position: absolute; top: 0; left: 0; z-index: 4;">코로나 블루</h1>
           </div>
@@ -144,9 +139,11 @@ event.preventDefault();
           <lottie-player data-aos="fade-in" src="https://assets7.lottiefiles.com/packages/lf20_ljf8r8fl.json"  background="transparent"  speed="1"  style="width: 108%; margin-top: -8%; margin-left: -2%;"    autoplay></lottie-player>        </div>
       </div>
       </div>
-      <div class="character" style="z-index: 4;">
-        <div class="first" style="background-image: url('img/character-2.svg'); background-repeat: no-repeat; background-size: cover; background-position: center bottom; background-attachment: fixed;"><h1 style="color:#ffffff;">그렇다면<br>어르신들께</h1></div>
-        <div class="second" style="background-image: url('img/character-3.svg'); background-repeat: no-repeat; background-size: cover; background-position: center bottom; background-attachment: fixed;"><h1 style="color:#ffffff;">필요한 플랫폼은<br>어떤 것 일까요</h1></div>
+      <div class="character" style="z-index: 4; background-image: url('img/cha-mobile-2.svg'); background-repeat: no-repeat; background-size: cover; background-position: left bottom; background-attachment: scroll;">
+        <h1 class="mobile-h1" style="color:#ffffff;">그렇다면<br>어르신들께</h1>
+        <h1 class="mobile-h2" style="color:#ffffff;">필요한 플랫폼은<br>어떤 것 일까요</h1>
+        <div class="first" style="background-image: url('img/cha-2.svg'); background-repeat: no-repeat; background-size: cover; background-position: center bottom; background-attachment: fixed;"><h1 style="color:#ffffff;">그렇다면<br>어르신들께</h1></div>
+        <div class="second" style="background-image: url('img/cha-3.svg'); background-repeat: no-repeat; background-size: cover; background-position: center bottom; background-attachment: fixed;"><h1 style="color:#ffffff;">필요한 플랫폼은<br>어떤 것 일까요</h1></div>
       </div>
       <div class="domain" style="background-color: #ff6200; z-index: 4;">
         <div class="domain-text" style="color: #ffffff;">
@@ -240,12 +237,14 @@ event.preventDefault();
           <lottie-player data-aos="fade-in" src="https://assets5.lottiefiles.com/packages/lf20_jjzga9wv.json"  background="transparent"  speed="1"  style="width: 100%;"    autoplay></lottie-player>        </div>
       </div>
       </div>
-      <div class="character" style="z-index: 7;">
-        <div class="first" style="background-image: url('img/character-3.svg'); background-repeat: no-repeat; background-size: cover; background-position: center bottom; background-attachment: fixed;"><h1 style="color:#ffffff;">어르신들을 위한<br>커뮤니케이션 플랫폼</h1></div>
-        <div class="second" style="background-image: url('img/character-4.svg'); background-repeat: no-repeat; background-size: cover; background-position: center bottom; background-attachment: fixed;"><h1 style="color:#ff6200;">우리동네 사랑방을<br>소개합니다</h1></div>
+      <div class="character" style="z-index: 7; background-image: url('img/cha-mobile-3.svg'); background-repeat: no-repeat; background-size: cover; background-position: left bottom; background-attachment: scroll;">
+        <h1 class="mobile-h1" style="color:#ffffff;">어르신들을 위한<br>커뮤니케이션 플랫폼</h1>
+        <h1 class="mobile-h2" style="color:#ff6200;">우리동네 사랑방을<br>소개합니다</h1>
+        <div class="first" style="background-image: url('img/cha-3.svg'); background-repeat: no-repeat; background-size: cover; background-position: center bottom; background-attachment: fixed;"><h1 style="color:#ffffff;">어르신들을 위한<br>커뮤니케이션 플랫폼</h1></div>
+        <div class="second" style="background-image: url('img/cha-4.svg'); background-repeat: no-repeat; background-size: cover; background-position: center bottom; background-attachment: fixed;"><h1 style="color:#ff6200;">우리동네 사랑방을<br>소개합니다</h1></div>
       </div>
 
-        <li class="title-solid s-title" style="position:sticky; top:0; z-index: 9; background-color: #ffffff; border-bottom: 0px solid #ffffff;"><h1><span class="classforTitle">쉽게 접속하고</span> <span class="classforTitle">편하게 이용하고</span> <span class="classforTitle">함께 해요</span></h1></li>
+        <li class="title-solid s-title" style="position:sticky; top:0; z-index: 9; background-color: #ffffff; border-bottom: 0px solid #ffffff;"><h1><span class="classforTitle">쉽게 접속하고</span> <span class="classforTitle">편하게 이용하고</span> <br><span class="classforTitle">함께 해요</span></h1></li>
       <div class="content-wrapper s-wrapper" style="background-color: #ffffff;">
         <ol class="bottom-list" style="color: #ffffff;">
           <li class="bottom">-bottom-</li>
@@ -382,7 +381,6 @@ event.preventDefault();
         var titleHeight = $(window).height()*16/100;
         var classforTop = $('.top');
         var classforBottom = $('.bottom');
-        var classforSmotion = $('.motion-s');
         var classforWrapper = $('.content-wrapper');
         var classforUiname = $('.ui-name');
         var classforUi = $('.ui');
@@ -489,9 +487,6 @@ event.preventDefault();
             bottomAnchor(index);
             animateTitle(index);
           });
-          // $.each(classforS, function(index, item){
-          //   uiAnchor(index);
-          // })
           $.each(classforCharacter, function(index, item){
             scrollforC(index);
           })
