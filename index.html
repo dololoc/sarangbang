@@ -12,6 +12,14 @@
   <link rel="stylesheet" href="css/fontello.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>우리동네 사랑방</title>
+  <script>//ios10 축소확대기능 끄기
+document.documentElement.addEventListener('touchstart', function (event) {
+if (event.touches.length > 1) {
+event.preventDefault();
+}
+}, false);
+  </script>
+[출처] [HTML] 아이폰에서 사파리웹 확대/축소 제어하는 방법|작성자 디트리M
 </head>
 <body style="overflow-x:hidden;">
   <div class="scroll-top">-scroll-top-</div>
