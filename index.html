@@ -99,7 +99,7 @@
       </div>
       <div class="content-solid">
         <div class="content-area">
-          <div class="h1-area" style="width: 12rem;">
+          <div class="h1-area" style="width: 8.8rem;">
             <div data-aos="fade-in" class="h1-animation"></div>
             <h1 style="position: absolute; top: 0; left: 0; z-index: 12;">오프라인 공간의 폐쇄</h1>
           </div>
@@ -112,7 +112,7 @@
       </div>
       <div class="content-solid">
         <div class="content-area">
-          <div class="h1-area" style="width: 22.4rem;">
+          <div class="h1-area" style="width: 16.8rem;">
             <div data-aos="fade-in" class="h1-animation"></div>
             <h1 style="position: absolute; top: 0; left: 0; z-index: 12;">화상을 기반으로 한 비대면 플랫폼의 확대</h1>
           </div>
@@ -125,7 +125,7 @@
       </div>
       <div class="content-solid">
         <div class="content-area">
-          <div class="h1-area" style="width: 7rem;">
+          <div class="h1-area" style="width: 5.0rem;">
             <div data-aos="fade-in" class="h1-animation"></div>
             <h1 style="position: absolute; top: 0; left: 0; z-index: 12;">코로나 블루</h1>
           </div>
@@ -171,7 +171,7 @@
 
       <div class="content-solid">
         <div class="content-area">
-          <div class="h1-area" style="width: 16rem;">
+          <div class="h1-area" style="width: 12.8rem;">
             <div data-aos="fade-in" class="h1-animation" style="background-color: #27304d;"></div>
             <h1 style="position: absolute; top: 0; left: 0; z-index: 12;">어르신들께 경로당이 갖는 의미</h1>
           </div>
@@ -184,7 +184,7 @@
       </div>
       <div class="content-solid">
         <div class="content-area">
-          <div class="h1-area" style="width: 24rem;">
+          <div class="h1-area" style="width: 19.8rem;">
             <div data-aos="fade-in" class="h1-animation" style="background-color: #27304d;"></div>
             <h1 style="position: absolute; top: 0; left: 0; z-index: 12;">상대와 주제를 가리지 않는 어르신들의 대화 방식</h1>
           </div>
@@ -206,7 +206,7 @@
       </div>
       <div class="content-solid">
         <div class="content-area">
-          <div class="h1-area" style="width: 16rem;">
+          <div class="h1-area" style="width: 12.8rem;">
             <div data-aos="fade-in" class="h1-animation" style="background-color: #27304d;"></div>
             <h1 style="position: absolute; top: 0; left: 0; z-index: 12;">이웃관계를 통한 커뮤니티 케어</h1>
           </div>
@@ -219,7 +219,7 @@
       </div>
       <div class="content-solid">
         <div class="content-area">
-          <div class="h1-area" style="width: 22rem;">
+          <div class="h1-area" style="width: 18.6rem;">
             <div data-aos="fade-in" class="h1-animation" style="background-color: #27304d;"></div>
             <h1 style="position: absolute; top: 0; left: 0; z-index: 12;">어르신들의 신체적 특성을 고려한 디자인 방향</h1>
           </div>
@@ -240,7 +240,7 @@
 
         <li class="title-solid s-title" style="position:sticky; top:0; z-index: 9; background-color: #ffffff; border-bottom: 0px solid #ffffff;"><h1><span class="classforTitle">쉽게 접속하고</span> <span class="classforTitle">편하게 이용하고</span> <span class="classforTitle">함께 해요</span></h1></li>
       <div class="content-wrapper s-wrapper" style="background-color: #ffffff;">
-        <ol class="bottom-list" style="color: #ffffff;">
+        <ol class="bottom-list" style="color: #ff6200;">
           <li class="bottom">-bottom-</li>
           <li class="bottom">-bottom-</li>
           <li class="bottom">-bottom-</li>
@@ -375,6 +375,7 @@
         var titleHeight = $(window).height()*16/100;
         var classforTop = $('.top');
         var classforBottom = $('.bottom');
+        var classforSmotion = $('.motion-s');
         var classforWrapper = $('.content-wrapper');
         var classforUiname = $('.ui-name');
         var classforUi = $('.ui');
@@ -481,6 +482,9 @@
             bottomAnchor(index);
             animateTitle(index);
           });
+          // $.each(classforS, function(index, item){
+          //   uiAnchor(index);
+          // })
           $.each(classforCharacter, function(index, item){
             scrollforC(index);
           })
