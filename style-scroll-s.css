@@ -9,7 +9,7 @@ p{margin: 0; font-family: 'Roboto', 'Noto Sans KR', sans-serif; font-size: 1rem;
 .scroller-bottom{position: fixed; top: 90vh; right: 0; color: yellow; z-index:-12;}
 .ui-anchor{position: fixed; top: 24vh; right: 0; color: yellow; z-index:-12;}
 
-.top{position: absolute; top:0; right: 0; color: red; z-index:-12;}
+.top{position: absolute; top:0; right: 0; color: red; z-index:20;}
 /* .bottom{position:absolute; right: 0; color: red; z-index:-12;} */
 
 #introvid,#outrovid{background-color:#000000; position: relative; width: 100%; height: 100vh; overflow-y:hidden;}
@@ -19,7 +19,7 @@ p{margin: 0; font-family: 'Roboto', 'Noto Sans KR', sans-serif; font-size: 1rem;
 .domain{position:relative; width: 100%; height: 100vh; z-index: 0; overflow-y:hidden; background-color: #ffffff;}
 .domain h1{font-size: 2rem; line-height: 3.2rem;}
 .domain-text{position: relative; top:12vh; left:12vw; width: 76vw; height: 76vh; color: #ff6200;}
-.domain-img{position: absolute; top: 8vh; right: 12vw; width: 76vw; height: 92vh;}
+.domain-img{position: absolute; top: 12vh; right: 12vw; width: 76vw; height: 92vh;}
 
 .domain-text-right{position:absolute; left: 60vw; top: 16vh; width: 28vw; height: 76vh;}
 .domain-text-left{position:absolute; left: 12vw; top: 40vh; width: 40vw; height: 60vh;}
@@ -43,11 +43,11 @@ p{margin: 0; font-family: 'Roboto', 'Noto Sans KR', sans-serif; font-size: 1rem;
 .podcast::before{content: '\f2ce'; font-family: fontello; margin-right: 1rem; color: #ff6200;} */
 
 .r-cha-left{position: absolute; left: 0; top: 16vh;}
-.r-cha-right{position: absolute; right: 0; top: 20vh; margin-top: 6rem;}
+.r-cha-right{position: absolute; right: 0; top: 18.4vh; margin-top: 6rem;}
 
 .r-talk-left{position: absolute; left: 0; margin-left: 160px; top: 20vh; font-size: 0.9rem; line-height: 1.8rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
               width: 27rem; padding: 1.2rem; padding-left: 2.2rem; background-color: #ffffff; color: #27304d; border-radius: 2rem; border-top-left-radius: 0;}
-.r-talk-right{position: absolute; right: 0; margin-right: 200px; top: 24vh; margin-top: 6rem; font-size: 0.9rem; line-height: 1.8rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
+.r-talk-right{position: absolute; right: 0; margin-right: 200px; top: 22.4vh; margin-top: 6rem; font-size: 0.9rem; line-height: 1.8rem; font-weight: 500; letter-spacing: -0.8px; text-align: justify;
               width: 27rem; padding: 1.2rem; padding-left: 2.2rem; background-color: #ffffff; color: #27304d; border-radius: 2rem; border-top-right-radius: 0;}
 
 .character{position:sticky; top:0; left: 0; width: 100%; height: 200vh; z-index: 0;}
