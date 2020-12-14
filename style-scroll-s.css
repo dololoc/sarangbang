@@ -18,6 +18,8 @@ p{margin: 0; font-family: 'Roboto', 'Noto Sans KR', sans-serif; font-size: 1rem;
 
 .domain{position:relative; width: 100%; height: 100vh; z-index: 0; overflow-y:hidden; background-color: #ffffff;}
 .domain h1{font-size: 2rem; line-height: 3.2rem;}
+.domain-h1{margin-top: -4rem;}
+.domain-h2{margin-top: 4rem;}
 .domain-text{position: relative; top:12vh; left:12vw; width: 76vw; height: 76vh; color: #ff6200;}
 .domain-img{position: absolute; top: 12vh; right: 12vw; width: 76vw; height: 92vh;}
 
@@ -33,7 +35,7 @@ p{margin: 0; font-family: 'Roboto', 'Noto Sans KR', sans-serif; font-size: 1rem;
               width: 27rem; padding: 1.2rem; padding-left: 2.2rem; background-color: #ffffff; color: #27304d; border-radius: 2rem; border-top-right-radius: 0;}
 
 .character{position:sticky; top:0; left: 0; width: 100%; height: 200vh; z-index: 0;}
-.character h1{position: absolute; top: 16vh; left: 64vw; z-index: 2; font-size: 2rem; line-height: 3.2rem;}
+.character h1{position: absolute; top: 32vh; left: 64vw; z-index: 2; font-size: 2rem; line-height: 3.2rem; margin-top: -4rem;}
 .first{position: absolute; top:0; left: 0; width:100vw; height: 100vh; overflow-y:hidden; z-index:1;}
 .second{position: absolute; top:0; left: 0; width:100vw; height: 100vh; overflow-y:hidden; z-index:0;}
 .mobile-h1, .mobile-h2{display: none;}
@@ -53,7 +55,8 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 .content-solid{position: relative; width: 100%; height: 84vh; margin-top: 0px; display: none;}
 
 .content-area{position: absolute; top:4vh; left: 12vw; width: 76vw;}
-.content-solid h1{font-size: 1rem; line-height: 2.2rem; margin-bottom: 4.4rem;}  .content-solid p{width:34vw;}
+.content-solid h1{font-size: 1rem; line-height: 2.2rem; margin-bottom: 3rem;}  .content-solid p{width:34vw;}
+.eng-p{margin-top: 3rem;}
 .text-title{font-weight:700;}
 
 .h1-area{position: absolute; top: 0; left: 0; z-index: 1; width: 10.8rem; height: 2.4rem;}
@@ -67,7 +70,7 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
               100%{width: 100%; left: 0; padding: 4px; opacity: 1;}
 }
 
-.motion{position: absolute; left: 53vw; top: 4vh; margin-top: 8.8rem; width: 35vw;}
+.motion{position: absolute; left: 53vw; top: 4vh; margin-top: 7.4rem; width: 35vw;}
 
 .full-motion{position:absolute; width: 48vw; height:80vh; left: 14vw;}
 
