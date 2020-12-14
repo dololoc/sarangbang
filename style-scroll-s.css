@@ -139,6 +139,7 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
   ol.bottom-list{display: none;}
   .content-solid{display: block; height: 216vw;} .content-solid h1{margin-bottom: 4vh;} .content-solid p{width: 100%;}
   .short-solid{height: 108vw;}
+  .lastp{margin-bottom: -12%;}
   .content-area{position:relative; margin-top: 0vh; left: 4vw; width: 92%;}
   .motion{position: relative; left: 2vw; width: 92%; top: 0; margin-top: 6rem;}
   .motion-left{left: 0vw;}
@@ -151,6 +152,10 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
   #reference-title h1{left: 4vw;}
   #reference-solid{height: 280vw;}
   ul.reference-list{left: 4vw; width: 92vw;}
+  .fullcut{left: 4vw; width: 92vw;}
+  .onecut{position: absolute; top: 46.75vw; left: 4vw; width: 28vw; height: 40vw;}
+  .twocut{position: absolute; top: 46.75vw; left: 36vw; width: 28vw; height: 40vw;}
+  .threecut{position: absolute; top: 46.75vw; left: 68vw; width: 28vw; height: 40vw;}
   #profile{height: 168vw; padding-top: 8vw;}
   .p-img{margin-top: 0;}
   .prof-logo{left: 4vw; width: 52vw;}
