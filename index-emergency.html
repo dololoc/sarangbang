@@ -398,6 +398,7 @@
         var classforexp = $('.exp');
         var classforsolid = $('.content-solid');
         var anchorforeng = $('.content-solid p')
+        var classforeng = $('.eng-p');
 
         function noAnchor(){
           if(windowwidth<= 720){
@@ -424,7 +425,10 @@
           if(e2==5||e2==8||e2==11){
             var thiswrapper = classforWrapper.eq((e2+1)/3-2);
             var firstcontent = $(thiswrapper).children('.content-solid').eq(0); $(firstcontent).show();
-            console.log(anchorforeng.width());
+            var pwidth = anchorforeng.width();
+            if(pwidth>600){
+              classforeng.show();
+            }else{classforeng.hide();}
             if(e2==12){classforSmotion.eq(0).show();}
           }
         }
@@ -499,6 +503,13 @@
           $.each(classforCharacter, function(index, item){
             scrollforC(index);
           })
+        })
+
+        $(window).resize(function(){
+          var pwidth = anchorforeng.width();
+          if(pwidth>600){
+            classforeng.show();
+          }else{classforeng.hide();}
         })
     });
   </script>
