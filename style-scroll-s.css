@@ -56,10 +56,10 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 
 .content-area{position: absolute; top:4vh; left: 12vw; width: 76vw;}
 .content-solid h1{font-size: 1rem; line-height: 2.2rem; margin-bottom: 3rem;}  .content-solid p{width:34vw;}
-.eng-p{margin-top: 3rem;}
+.eng-p{margin-top: 3rem; display: none;}
 .text-title{font-weight:700;}
 
-.h1-area{position: absolute; top: 0; left: 0; z-index: 1; width: 10.8rem; height: 2.4rem;}
+.h1-area{position: absolute; top: 0; left: 0; z-index: 1; width: 20rem; height: 2.4rem;}
 .h1-animation{position: relative; top: 0; left: 0; margin-top:4px; margin-left:-4px; background-color: #ff6200;
               width:8%; height: 1.2rem; padding: 4px; border-radius: 0;
               animation: h1-highlight 1.6s forwards;}
@@ -93,13 +93,19 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 ul.reference-list{list-style-type: none; position: relative; margin: 0; top: 2vh; padding: 0; left: 12vw;}
 ul.reference-list li{position: relative; font-size: 2vh; line-height: 3.7vh; font-weight: 400;}
 
+#stealcut{position: relative; width: 100%; height: 100vw; margin: 0 auto; background-color: #ffffff;}
+.fullcut{position: absolute; top: 2vw; left: 12vw; width: 76vw;}
+.onecut{position: absolute; top: 46.75vw; left: 12vw; width: 24vw; height: 40vw;}
+.twocut{position: absolute; top: 46.75vw; left: 38vw; width: 24vw; height: 40vw;}
+.threecut{position: absolute; top: 46.75vw; left: 64vw; width: 24vw; height: 40vw;}
+
 #profile{position:relative; width:100%; height:56vw; margin:0 auto; z-index:0; background-color: #ffffff;}
 .prof-logo{position:absolute; top:4vh; left: 12vw; width: 240px;}
 .member{ position: absolute; top:320px; width: 24vw; height: 28vw;}
 .amember{left: 12vw;} .bmember{left: 38vw;} .cmember{left: 64vw;}
 .p-img{ position: relative; margin: 0 auto; margin-top: 0vh; width: 24vw; height: 24vw; border-radius: 4px; background-color: #f7f9fc;}
 
-footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; padding:0}
+footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; padding:0; background-color: #27304d;}
 
 @media (max-width: 720px){
   .scroll-top, .content-top, .scroller-top, .scroller-bottom, .ui-anchor, .top, .bottom{display:none;}
