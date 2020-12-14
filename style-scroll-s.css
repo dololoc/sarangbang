@@ -7,7 +7,6 @@ p{margin: 0; font-family: 'Roboto', 'Noto Sans KR', sans-serif; font-size: 1rem;
 .content-top{position: fixed; top:16vh; right: 0; color: yellow; z-index:-12;}
 .scroller-top{position: fixed; top: 80vh; right: 0; color: yellow; z-index:-12;}
 .scroller-bottom{position: fixed; top: 90vh; right: 0; color: yellow; z-index:-12;}
-.ui-anchor{position: fixed; top: 24vh; right: 0; color: yellow; z-index:-12;}
 
 .top{position: absolute; top:0; right: 0; color: red; z-index:-12;}
 /* .bottom{position:absolute; right: 0; color: red; z-index:-12;} */
@@ -108,7 +107,7 @@ ul.reference-list li{position: relative; font-size: 2vh; line-height: 3.7vh; fon
 footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; padding:0; background-color: #27304d;}
 
 @media (max-width: 720px){
-  .scroll-top, .content-top, .scroller-top, .scroller-bottom, .ui-anchor, .top, .bottom{display:none;}
+  .scroll-top, .content-top, .scroller-top, .scroller-bottom, .top, .bottom{display:none;}
   body{width: auto;}
   #intro-vimeo, #outro-vimeo{position:absolute;top:-24vw;}
   .vid-exp{position: absolute; top: 60vh; left: 4vw; width: 92%;}
@@ -153,9 +152,9 @@ footer{position: relative; width:100%; height: 16vh; z-index: 0; margin:0; paddi
   #reference-solid{height: 280vw;}
   ul.reference-list{left: 4vw; width: 92vw;}
   .fullcut{left: 4vw; width: 92vw;}
-  .onecut{position: absolute; top: 55.75vw; left: 4vw; width: 28vw; height: 40vw;}
-  .twocut{position: absolute; top: 55.75vw; left: 36vw; width: 28vw; height: 40vw;}
-  .threecut{position: absolute; top: 55.75vw; left: 68vw; width: 28vw; height: 40vw;}
+  .onecut{position: absolute; top: 57.75vw; left: 4vw; width: 28vw; height: 40vw;}
+  .twocut{position: absolute; top: 57.75vw; left: 36vw; width: 28vw; height: 40vw;}
+  .threecut{position: absolute; top: 57.75vw; left: 68vw; width: 28vw; height: 40vw;}
   #profile{height: 168vw; padding-top: 8vw;}
   .p-img{margin-top: 0;}
   .prof-logo{left: 4vw; width: 52vw;}
