@@ -55,7 +55,7 @@ ol.bottom-list li{top: 84vh; height: 84vh; margin: 0; padding: 0;}
 
 .content-area{position: absolute; top:4vh; left: 12vw; width: 76vw;}
 .content-solid h1{font-size: 1rem; line-height: 2.2rem; margin-bottom: 3rem;}  .content-solid p{width:34vw;}
-.eng-p{margin-top: 3rem; display: none;}
+.eng-p{margin-top: 2rem; display: none;}
 .text-title{font-weight:700;}
 
 .h1-area{position: absolute; top: 0; left: 0; z-index: 1; width: 20rem; height: 2.4rem;}
